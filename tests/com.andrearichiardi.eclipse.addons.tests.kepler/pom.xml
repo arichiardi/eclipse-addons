@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <name>Eclipse Dependency Injection Addons - Tests Kepler</name>
+  <artifactId>com.andrearichiardi.eclipse.addons.tests.kepler</artifactId>
+  <packaging>eclipse-test-plugin</packaging>
+
+  <parent>
+    <version>1.0.0-SNAPSHOT</version>
+    <groupId>com.andrearichiardi.eclipse</groupId>
+    <artifactId>com.andrearichiardi.eclipse.addons.project</artifactId>
+    <relativePath>../../releng/com.andrearichiardi.eclipse.addons.releng/pom.xml</relativePath>
+  </parent>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>.</directory>
+        <includes>
+          <include>META-INF/</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-surefire-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>unpack-sources</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>com.andrearichiardi.eclipse</groupId>
+                  <artifactId>com.andrearichiardi.eclipse.addons.tests.src</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                  <type>jar</type>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${project.build.sourceDirectory}</outputDirectory>
+                </artifactItem>
+              </artifactItems>
+              <includes>**/*.java</includes>
+              <excludes>**/*.properties</excludes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
