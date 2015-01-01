@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <name>Eclipse Dependency Injection Addons - Tests Source</name>
+    <artifactId>com.andrearichiardi.eclipse.addons.tests.src</artifactId>
+    <packaging>pom</packaging>
+
+    <parent>
+        <version>1.0.0-SNAPSHOT</version>
+        <groupId>com.andrearichiardi.eclipse</groupId>
+        <artifactId>com.andrearichiardi.eclipse.addons.project</artifactId>
+        <relativePath>../../releng/com.andrearichiardi.eclipse.addons.releng/pom.xml</relativePath>
+    </parent>
+
+    <build>
+      <resources>
+        <resource>
+          <directory>src/main/java</directory>
+        </resource>
+      </resources>
+      <plugins>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>add-resources</id>
+              <phase>package</phase>
+              <goals>
+                <goal>resources</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>create-jar</id>
+              <phase>package</phase>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <configuration>
+            <file>${project.build.directory}/${project.build.finalName}.jar</file>
+            <artifactId>${project.artifactId}</artifactId>
+            <groupId> ${project.groupId}</groupId>
+            <packaging>jar</packaging>
+            <version>${project.version}</version>
+          </configuration>
+           <executions>
+            <execution>
+              <id>install-sources</id>
+              <phase>install</phase>
+              <goals>
+                <goal>install-file</goal>
+              </goals>
+            </execution>
+        </executions>
+        </plugin>
+      </plugins>
+    </build>
+</project>

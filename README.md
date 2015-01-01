@@ -6,9 +6,8 @@ I found e(fx)clipse ```core.di```, ```core.adapter```, ```core.text``` packages 
 As a starting point, try [this](http://tomsondev.bestsolution.at/2013/11/21/writing-ieclipsecontext-less-code/) blog post and [this other](https://wiki.eclipse.org/Efxclipse/Runtime/Recipes#Publishing_to_the_IEclipseContext)
 excerpt from the e(fx)clipse wiki.
 
-This new packaging removes all the Java 8 type annotations and adds [retrolambda](https://github.com/orfjackal/retrolambda) to backport the few lambdas to the Java 7 world. It might support Java 6 but it has not been tested.
-
-At the moment Kepler and e4 (Luna and higher) are tested and supported.
+This new packaging removes all the Java 8 type annotations and adds [retrolambda](https://github.com/orfjackal/retrolambda) to backport the new constructs.
+The Execution Environment has been set to ```JavaSE-1.6```. Kepler and E4 (Luna and higher) are supported.
 
 Download
 --------
