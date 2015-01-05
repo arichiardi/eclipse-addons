@@ -147,6 +147,8 @@
                     <version>${tycho-version}</version>
                     <configuration>
                         <encoding>UTF-8</encoding>
+                        <source>1.6</source>
+                        <target>1.6</target>
                     </configuration>
                 </plugin>
                 <plugin>
