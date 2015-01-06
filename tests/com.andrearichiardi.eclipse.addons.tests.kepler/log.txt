@@ -1,0 +1,1874 @@
+Apache Maven 3.0.5
+Maven home: /usr/share/maven
+Java version: 1.8.0_25, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "3.13.0-43-lowlatency", arch: "amd64", family: "unix"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /usr/share/maven/conf/settings.xml
+[DEBUG] Reading user settings from /home/kapitan/.m2/settings.xml
+[DEBUG] Using local repository at /home/kapitan/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10 for /home/kapitan/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] org.eclipse.tycho:tycho-maven-plugin:jar:0.22.0:
+[DEBUG]    org.eclipse.tycho:tycho-core:jar:0.22.0:compile
+[DEBUG]       org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]          org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]             org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]                org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.7:compile (version managed from 1.4)
+[DEBUG]       org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.0.5:compile (version managed from 2.0.4)
+[DEBUG]       org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445:compile
+[DEBUG]          org.eclipse.tycho:sisu-equinox-api:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:tycho-metadata-model:jar:0.22.0:compile
+[DEBUG]          de.pdark:decentxml:jar:1.3:compile
+[DEBUG]       org.eclipse.tycho:tycho-embedder-api:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0:compile
+[DEBUG]    org.eclipse.tycho:tycho-p2-facade:jar:0.22.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:0.22.0:compile
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.version < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.* < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.repository < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.collection < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.metadata < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.spi < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.installation < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.transfer < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.sonatype.aether.resolution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Created new class realm extension>org.eclipse.tycho:tycho-maven-plugin:0.22.0
+[DEBUG] Importing foreign packages into class realm extension>org.eclipse.tycho:tycho-maven-plugin:0.22.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm extension>org.eclipse.tycho:tycho-maven-plugin:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-maven-plugin:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-core:jar:0.22.0
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.5
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907
+[DEBUG]   Included: org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445
+[DEBUG]   Included: org.eclipse.tycho:sisu-equinox-api:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-metadata-model:jar:0.22.0
+[DEBUG]   Included: de.pdark:decentxml:jar:1.3
+[DEBUG]   Included: org.eclipse.tycho:tycho-embedder-api:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-p2-facade:jar:0.22.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:0.22.0
+[DEBUG] Extension realms for project com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:eclipse-test-plugin:1.0.0-SNAPSHOT: [ClassRealm[extension>org.eclipse.tycho:tycho-maven-plugin:0.22.0, parent: sun.misc.Launcher$AppClassLoader@5c647e05]]
+[DEBUG] Created new class realm project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Populating class realm project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Looking up lifecyle mappings for packaging eclipse-test-plugin from ClassRealm[project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:eclipse-test-plugin:1.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 27, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[DEBUG] org.eclipse.tycho:tycho-maven-plugin:0.22.0 configured in MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG] org.eclipse.tycho:tycho-surefire-plugin:0.22.0 configured in MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG] org.eclipse.tycho:tycho-packaging-plugin:0.22.0 configured in MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG] org.eclipse.tycho:tycho-p2-plugin:0.22.0 configured in MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG] target-platform-configuration for MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml:
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <dependency-resolution>
+    <extraRequirements>
+      <requirement>
+        <type>eclipse-feature</type>
+        <id>org.eclipse.rcp</id>
+        <versionRange>0.0.0</versionRange>
+      </requirement>
+    </extraRequirements>
+  </dependency-resolution>
+  <resolver>p2</resolver>
+  <pomDependencies>consider</pomDependencies>
+  <environments>
+    <environment>
+      <os>linux</os>
+      <ws>gtk</ws>
+      <arch>x86</arch>
+    </environment>
+    <environment>
+      <os>linux</os>
+      <ws>gtk</ws>
+      <arch>x86_64</arch>
+    </environment>
+    <environment>
+      <os>win32</os>
+      <ws>win32</ws>
+      <arch>x86</arch>
+    </environment>
+    <environment>
+      <os>win32</os>
+      <ws>win32</ws>
+      <arch>x86_64</arch>
+    </environment>
+    <environment>
+      <os>macosx</os>
+      <ws>cocoa</ws>
+      <arch>x86_64</arch>
+    </environment>
+  </environments>
+</configuration>
+Debug options:
+    file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/.options not found
+Time to load bundles: 223
+[DEBUG] Clearing proxy settings in OSGi runtime
+[DEBUG] Resolving plugin version for org.apache.maven.plugins:maven-compiler-plugin
+[DEBUG] Could not find metadata org.apache.maven.plugins:maven-compiler-plugin/maven-metadata.xml in local (/home/kapitan/.m2/repository)
+[DEBUG] Skipped remote update check for org.apache.maven.plugins:maven-compiler-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.sonatype.org/content/groups/sonatype-public-grid
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for https://repo.eclipse.org/content/repositories/releases/
+Downloading: http://repository.sonatype.org/content/groups/sonatype-public-grid/org/apache/maven/plugins/maven-compiler-plugin/maven-metadata.xml
+Downloading: https://repo.eclipse.org/content/repositories/releases/org/apache/maven/plugins/maven-compiler-plugin/maven-metadata.xml
+1/2 KB   2/2 KB            Downloaded: http://repository.sonatype.org/content/groups/sonatype-public-grid/org/apache/maven/plugins/maven-compiler-plugin/maven-metadata.xml (2 KB at 0.4 KB/sec)
+[DEBUG] Writing resolution tracking file /home/kapitan/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/resolver-status.properties
+         [DEBUG] Writing resolution tracking file /home/kapitan/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin/resolver-status.properties
+[DEBUG] Could not find metadata org.apache.maven.plugins:maven-compiler-plugin/maven-metadata.xml in eclipse (https://repo.eclipse.org/content/repositories/releases/)
+[DEBUG] Resolved plugin version for org.apache.maven.plugins:maven-compiler-plugin to 3.2 from repository tycho (http://repository.sonatype.org/content/groups/sonatype-public-grid, releases+snapshots)
+[DEBUG] org.eclipse.tycho:tycho-surefire-plugin:jar:0.22.0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]    org.eclipse.tycho:tycho-core:jar:0.22.0:compile
+[DEBUG]       org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]          org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]             org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.7:compile (version managed from 1.4)
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.0.5:compile (version managed from 2.0.4)
+[DEBUG]       org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445:compile
+[DEBUG]       org.eclipse.tycho:tycho-metadata-model:jar:0.22.0:compile
+[DEBUG]          de.pdark:decentxml:jar:1.3:compile
+[DEBUG]       org.eclipse.tycho:tycho-embedder-api:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0:compile
+[DEBUG]    org.eclipse.tycho:sisu-equinox-launching:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-api:jar:0.22.0:compile
+[DEBUG]       org.apache.commons:commons-exec:jar:1.2:compile
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.surefire.osgibooter:jar:0.22.0:runtime
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.surefire.junit:jar:0.22.0:runtime
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.surefire.junit4:jar:0.22.0:runtime
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.surefire.junit47:jar:0.22.0:runtime
+[DEBUG]    org.apache.maven.surefire:surefire-api:jar:2.17:compile
+[DEBUG]    org.eclipse.tycho:tycho-p2-facade:jar:0.22.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:0.22.0:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.17:compile
+[DEBUG]       org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.3:provided (scope managed from compile) (version managed from 3.2)
+[DEBUG]       org.apache.maven.surefire:surefire-booter:jar:2.17:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.5.5:provided (scope managed from compile) (version managed from 1.0-alpha-9-stable-1)
+[DEBUG]             org.apache.xbean:xbean-reflect:jar:3.4:provided
+[DEBUG]                log4j:log4j:jar:1.2.12:provided
+[DEBUG]                commons-logging:commons-logging-api:jar:1.1:provided
+[DEBUG]             com.google.collections:google-collections:jar:1.0:provided
+[DEBUG]             junit:junit:jar:4.11:test (scope managed from compile) (version managed from 3.8.2)
+[DEBUG]                org.hamcrest:hamcrest-core:jar:1.3:test
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG] Created new class realm plugin>org.eclipse.tycho:tycho-surefire-plugin:0.22.0
+[DEBUG] Importing foreign packages into class realm plugin>org.eclipse.tycho:tycho-surefire-plugin:0.22.0
+[DEBUG]   Imported:  < project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.eclipse.tycho:tycho-surefire-plugin:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-surefire-plugin:jar:0.22.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.5
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907
+[DEBUG]   Included: org.eclipse.tycho:sisu-equinox-launching:jar:0.22.0
+[DEBUG]   Included: org.apache.commons:commons-exec:jar:1.2
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.surefire.osgibooter:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.surefire.junit:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.surefire.junit4:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.tycho.surefire.junit47:jar:0.22.0
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.17
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.17
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.17
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-core:jar:0.22.0
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-metadata-model:jar:0.22.0
+[DEBUG]   Excluded: de.pdark:decentxml:jar:1.3
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-embedder-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-p2-facade:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:0.22.0
+[DEBUG]   Excluded: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.3
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.5.5
+[DEBUG]   Excluded: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Excluded: log4j:log4j:jar:1.2.12
+[DEBUG]   Excluded: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Excluded: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Excluded: junit:junit:jar:4.11
+[DEBUG]   Excluded: org.hamcrest:hamcrest-core:jar:1.3
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:2.0.9
+[DEBUG] org.eclipse.tycho:tycho-p2-plugin:jar:0.22.0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.7:compile (version managed from 2.0.4)
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.7:compile (version managed from 1.4)
+[DEBUG]    org.eclipse.tycho:sisu-equinox-launching:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:tycho-core:jar:0.22.0:compile
+[DEBUG]          org.codehaus.plexus:plexus-archiver:jar:2.2:compile
+[DEBUG]             org.codehaus.plexus:plexus-io:jar:2.0.5:compile (version managed from 2.0.4)
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907:compile
+[DEBUG]          org.eclipse.tycho:tycho-metadata-model:jar:0.22.0:compile
+[DEBUG]             de.pdark:decentxml:jar:1.3:compile
+[DEBUG]          org.eclipse.tycho:tycho-embedder-api:jar:0.22.0:compile
+[DEBUG]             org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-api:jar:0.22.0:compile
+[DEBUG]       org.apache.commons:commons-exec:jar:1.2:compile
+[DEBUG]    org.eclipse.tycho:tycho-p2-facade:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:0.22.0:compile
+[DEBUG]    org.eclipse.tycho:tycho-artifactcomparator:jar:0.22.0:compile
+[DEBUG]       org.ow2.asm:asm-debug-all:jar:4.0:compile
+[DEBUG] Created new class realm plugin>org.eclipse.tycho:tycho-p2-plugin:0.22.0
+[DEBUG] Importing foreign packages into class realm plugin>org.eclipse.tycho:tycho-p2-plugin:0.22.0
+[DEBUG]   Imported:  < project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.eclipse.tycho:tycho-p2-plugin:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-p2-plugin:jar:0.22.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.eclipse.tycho:sisu-equinox-launching:jar:0.22.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.5
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907
+[DEBUG]   Included: org.apache.commons:commons-exec:jar:1.2
+[DEBUG]   Included: org.eclipse.tycho:tycho-artifactcomparator:jar:0.22.0
+[DEBUG]   Included: org.ow2.asm:asm-debug-all:jar:4.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-core:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-metadata-model:jar:0.22.0
+[DEBUG]   Excluded: de.pdark:decentxml:jar:1.3
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-embedder-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-p2-facade:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.p2.tools.shared:jar:0.22.0
+[INFO] Computing target platform for MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG] Added p2 repository kepler (http://download.eclipse.org/releases/kepler)
+[DEBUG] Added p2 repository luna (http://download.eclipse.org/releases/luna)
+[DEBUG] Using execution environment 'JavaSE-1.6' configured in Bundle-RequiredExecutionEnvironment (first entry)
+[DEBUG] Registered artifact repository org.eclipse.tycho.repository.registry.facade.RepositoryBlackboardKey(uri=file:/resolution-context-artifacts@/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler)
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/kepler/ (0B at 0B/s)
+[INFO] Adding repository http://download.eclipse.org/releases/kepler
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/kepler/201402280900/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/kepler/201309270900/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/kepler/201306260900/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/technology/epp/packages/kepler/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/luna/ (0B at 0B/s)
+[INFO] Adding repository http://download.eclipse.org/releases/luna
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/luna/201409261001/ (0B at 0B/s)
+[INFO] Fetching p2.index from http://download.eclipse.org/releases/luna/201406250900/ (0B at 0B/s)
+[DEBUG] Added 163 locally built units to the target platform
+[INFO] Resolving dependencies of MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[WARNING] The following locally built units have been used to resolve project dependencies:
+[WARNING]   com.andrearichiardi.eclipse.addons/1.0.0.201501061119
+[INFO] Resolving class path of MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG] Bundle-ClassPath entry injection_annotations.jar does not exist in/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.services/1.1.0.v20130515-1343/org.eclipse.e4.core.services-1.1.0.v20130515-1343.jar
+[DEBUG] Bundle-ClassPath entry runtime_registry_compatibility.jar does not exist in/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.registry/3.5.301.v20130717-1549/org.eclipse.equinox.registry-3.5.301.v20130717-1549.jar
+[DEBUG] Bundle-ClassPath entry injection_annotations.jar does not exist in/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.services/1.1.0.v20130515-1343/org.eclipse.e4.core.services-1.1.0.v20130515-1343.jar
+[DEBUG] Bundle-ClassPath entry e4-ide.jar does not exist in/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.ide/3.9.2.v20131004-0923/org.eclipse.ui.ide-3.9.2.v20131004-0923.jar
+[DEBUG] Bundle-ClassPath entry icu-data.jar does not exist in/home/kapitan/.m2/repository/p2/osgi/bundle/com.ibm.icu/50.1.1.v201304230130/com.ibm.icu-50.1.1.v201304230130.jar
+[DEBUG] Bundle-ClassPath entry runtime_registry_compatibility.jar does not exist in/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.registry/3.5.301.v20130717-1549/org.eclipse.equinox.registry-3.5.301.v20130717-1549.jar
+[DEBUG] Bundle-ClassPath entry e4-workbench.jar does not exist in/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.workbench/3.105.2.v20140211-1711/org.eclipse.ui.workbench-3.105.2.v20140211-1711.jar
+[DEBUG] Bundle-ClassPath entry compatibility.jar does not exist in/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.workbench/3.105.2.v20140211-1711/org.eclipse.ui.workbench-3.105.2.v20140211-1711.jar
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:eclipse-test-plugin:1.0.0-SNAPSHOT
+[DEBUG] Tasks:   [clean, install, test]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Eclipse Dependency Injection Addons - Tests Kepler 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime]
+[DEBUG] Repositories (dependencies): [kepler (http://download.eclipse.org/releases/kepler, disabled), luna (http://download.eclipse.org/releases/luna, disabled), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [tycho (http://repository.sonatype.org/content/groups/sonatype-public-grid, releases+snapshots), eclipse (https://repo.eclipse.org/content/repositories/releases/, releases+snapshots), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-packaging-plugin:0.22.0:build-qualifier (default-build-qualifier)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <baseDir>${project.basedir}</baseDir>
+  <execution>${mojoExecution}</execution>
+  <forceContextQualifier>${forceContextQualifier}</forceContextQualifier>
+  <format default-value="yyyyMMddHHmm"/>
+  <packaging>${project.packaging}</packaging>
+  <project>${project}</project>
+  <session>${session}</session>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-packaging-plugin:0.22.0:validate-id (default-validate-id)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <packaging>${project.packaging}</packaging>
+  <project>${project}</project>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-packaging-plugin:0.22.0:validate-version (default-validate-version)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <packaging>${project.packaging}</packaging>
+  <project>${project}</project>
+  <strictVersions default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.7:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-compiler-plugin:0.22.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir>${basedir}</basedir>
+  <buildDirectory>${project.build.directory}</buildDirectory>
+  <compilerId default-value="jdt">${maven.compiler.compilerId}</compilerId>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <copyResources default-value="true"/>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <encoding>UTF-8</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <fork default-value="false"/>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <mavenCompilerEncoding>${maven.compiler.encoding}</mavenCompilerEncoding>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputFileName>${project.build.finalName}</outputFileName>
+  <project>${project}</project>
+  <requireJREPackageImports default-value="false"/>
+  <session>${session}</session>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <source>1.6</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <strictCompilerTarget default-value="false"/>
+  <target>1.6</target>
+  <useJDK default-value="SYSTEM"/>
+  <useProjectSettings default-value="false"/>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.7:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:target-platform-configuration:0.22.0:target-platform (default-target-platform)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <project>${project}</project>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-packaging-plugin:0.22.0:package-plugin (default-package-plugin)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <archive>
+    <addMavenDescriptor>false</addMavenDescriptor>
+  </archive>
+  <buildDirectory>${project.build.directory}</buildDirectory>
+  <finalName>${project.build.finalName}</finalName>
+  <project>${project}</project>
+  <qualifier>${buildQualifier}</qualifier>
+  <session>${session}</session>
+  <strictBinIncludes default-value="true"/>
+  <useDefaultExcludes default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-p2-plugin:0.22.0:p2-metadata-default (default-p2-metadata-default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <attachP2Metadata default-value="true"/>
+  <baselineMode default-value="warn">${tycho.baseline}</baselineMode>
+  <baselineReplace default-value="all">${tycho.baseline.replace}</baselineReplace>
+  <defaultP2Metadata default-value="true"/>
+  <project>${project}</project>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-surefire-plugin:0.22.0:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>-Xmx512m</argLine>
+  <bundleStartLevel>
+    <bundle>
+      <id>org.eclipse.core.runtime</id>
+      <level>1</level>
+      <autoStart>true</autoStart>
+    </bundle>
+    <bundle>
+      <id>org.eclipse.equinox.ds</id>
+      <level>2</level>
+      <autoStart>true</autoStart>
+    </bundle>
+  </bundleStartLevel>
+  <debugPort>${debugPort}</debugPort>
+  <deleteOsgiDataDirectory default-value="true"/>
+  <failIfNoTests default-value="true">${failIfNoTests}</failIfNoTests>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <osgiDataDirectory default-value="${project.build.directory}/work/data/"/>
+  <parallel>${parallel}</parallel>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifacts>${plugin.artifacts}</pluginArtifacts>
+  <profileName default-value="DefaultProfile"/>
+  <project>${project}</project>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <session>${session}</session>
+  <showEclipseLog default-value="false">true</showEclipseLog>
+  <skip>${maven.test.skip}</skip>
+  <skipExec>${maven.test.skipExec}</skipExec>
+  <skipTests>${skipTests}</skipTests>
+  <surefireProperties default-value="${project.build.directory}/surefire.properties"/>
+  <test>${test}</test>
+  <testClass>${testClass}</testClass>
+  <testClassesDirectory>${project.build.outputDirectory}</testClassesDirectory>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testRuntime default-value="default"/>
+  <testSuite>${testSuite}</testSuite>
+  <threadCount>${threadCount}</threadCount>
+  <useJDK default-value="SYSTEM"/>
+  <useUIHarness default-value="false"/>
+  <useUIThread default-value="true"/>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <work default-value="${project.build.directory}/work"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.5:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <installAtEnd default-value="false">${installAtEnd}</installAtEnd>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <reactorProjects default-value="${reactorProjects}"/>
+  <skip default-value="false">${maven.install.skip}</skip>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+  <project default-value="${project}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-p2-plugin:0.22.0:update-local-index (default-update-local-index)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <project>${project}</project>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-packaging-plugin:0.22.0:build-qualifier (default-build-qualifier)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <baseDir>${project.basedir}</baseDir>
+  <execution>${mojoExecution}</execution>
+  <forceContextQualifier>${forceContextQualifier}</forceContextQualifier>
+  <format default-value="yyyyMMddHHmm"/>
+  <packaging>${project.packaging}</packaging>
+  <project>${project}</project>
+  <session>${session}</session>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-packaging-plugin:0.22.0:validate-id (default-validate-id)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <packaging>${project.packaging}</packaging>
+  <project>${project}</project>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-packaging-plugin:0.22.0:validate-version (default-validate-version)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <packaging>${project.packaging}</packaging>
+  <project>${project}</project>
+  <strictVersions default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.7:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.eclipse.tycho:tycho-compiler-plugin:0.22.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir>${basedir}</basedir>
+  <buildDirectory>${project.build.directory}</buildDirectory>
+  <compilerId default-value="jdt">${maven.compiler.compilerId}</compilerId>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <copyResources default-value="true"/>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <encoding>UTF-8</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <fork default-value="false"/>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <mavenCompilerEncoding>${maven.compiler.encoding}</mavenCompilerEncoding>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputFileName>${project.build.finalName}</outputFileName>
+  <project>${project}</project>
+  <requireJREPackageImports default-value="false"/>
+  <session>${session}</session>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <source>1.6</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <strictCompilerTarget default-value="false"/>
+  <target>1.6</target>
+  <useJDK default-value="SYSTEM"/>
+  <useProjectSettings default-value="false"/>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.7:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:eclipse-test-plugin:1.0.0-SNAPSHOT
+[DEBUG]    p2.eclipse-plugin:com.andrearichiardi.eclipse.addons:jar:1.0.0.201501061119:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.core.contexts:jar:1.3.1.v20130905-0905:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.core.di:jar:1.3.0.v20130514-1256:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.ds:jar:1.4.101.v20130813-1853:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.core.services:jar:1.1.0.v20130515-1343:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.osgi:jar:3.9.1.v20140110-1610:system
+[DEBUG]    p2.eclipse-plugin:org.apache.commons.lang:jar:2.6.0.v201404270220:system
+[DEBUG]    p2.eclipse-plugin:javax.annotation:jar:1.1.0.v201209060031:system
+[DEBUG]    p2.eclipse-plugin:javax.inject:jar:1.0.0.v20091030:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.databinding.observable:jar:1.4.1.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.databinding:jar:1.4.1.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.junit:jar:junit.jar:4.11.0.v201303080030:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.jdt.annotation:jar:2.0.0.v20140415-1436:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.databinding.property:jar:1.4.200.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:javax.xml:jar:1.3.4.v201005080400:system
+[DEBUG]    p2.eclipse-plugin:org.apache.batik.css:jar:1.6.0.v201011041432:system
+[DEBUG]    p2.eclipse-plugin:org.apache.batik.util:jar:1.6.0.v201011041432:system
+[DEBUG]    p2.eclipse-plugin:org.w3c.css.sac:jar:1.3.1.v200903091627:system
+[DEBUG]    p2.eclipse-plugin:org.w3c.dom.svg:jar:1.1.0.v201011041433:system
+[DEBUG]    p2.eclipse-plugin:org.apache.batik.util.gui:jar:1.6.0.v201011041432:system
+[DEBUG]    p2.eclipse-plugin:org.apache.felix.gogo.command:jar:0.10.0.v201209301215:system
+[DEBUG]    p2.eclipse-plugin:org.apache.felix.gogo.runtime:jar:0.10.0.v201209301036:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.osgi.services:jar:3.3.100.v20130513-1956:system
+[DEBUG]    p2.eclipse-plugin:org.apache.felix.gogo.shell:jar:0.10.0.v201212101605:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui:jar:3.105.0.v20130522-1122:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.resources:jar:3.9.1.v20140825-1431:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.jface.text:jar:3.8.101.v20130802-1147:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.ide:jar:3.9.2.v20131004-0923:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.views:jar:3.7.0.v20140408-0703:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.workbench.texteditor:jar:3.9.0.v20140411-1521:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.runtime:jar:3.9.100.v20131218-1515:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.expressions:jar:3.4.501.v20131118-1915:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.editors:jar:3.8.200.v20140401-1310:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.forms:jar:3.6.100.v20140422-1825:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.compare.core:jar:3.5.400.v20130903-0736:system
+[DEBUG]    p2.eclipse-plugin:com.ibm.icu:jar:50.1.1.v201304230130:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.compare:jar:3.5.501.v20140817-1445:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.commands:jar:3.6.100.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.common:jar:3.6.200.v20130402-1505:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.contenttype:jar:3.4.200.v20130326-1255:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.preferences:jar:3.5.100.v20130422-1538:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.registry:jar:3.5.301.v20130717-1549:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.databinding.beans:jar:1.2.200.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.text:jar:3.5.300.v20130515-1451:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.filesystem:jar:1.4.100.v20140514-1614:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.filebuffers:jar:3.5.400.v20140127-1516:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.jobs:jar:3.5.300.v20130429-1813:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.security:jar:1.2.0.v20130424-1801:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.core.net:jar:1.2.200.v20140124-2013:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.app:jar:1.3.100.v20130327-1442:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.core.commands:jar:0.10.2.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.core.di.extensions:jar:0.11.100.v20130514-1256:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.css.core:jar:0.10.100.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.css.swt:jar:0.11.0.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.w3c.dom.smil:jar:1.0.0.v200806040011:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.css.swt.theme:jar:0.9.100.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.di:jar:1.0.0.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.widgets:jar:1.0.0.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.event:jar:1.3.0.v20130327-1442:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.launcher:jar:1.3.0.v20130327-1440:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.simpleconfigurator:jar:1.0.400.v20130327-2119:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.util:jar:1.0.500.v20130404-1337:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.jface.databinding:jar:1.6.200.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.workbench3:jar:0.12.0.v20130515-1857:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.console:jar:1.0.100.v20130429-0953:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.bidi:jar:0.10.0.v20130327-1442:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.jface:jar:3.9.1.v20130725-1141:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.workbench.swt:jar:0.12.2.v20140117-1939:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.bindings:jar:0.10.102.v20140117-1939:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.model.workbench:jar:1.0.1.v20131118-1956:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.services:jar:1.0.1.v20131118-1940:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.workbench.renderers.swt:jar:0.11.2.v20140205-1834:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.workbench:jar:1.0.2.v20131202-1739:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.launcher.gtk.linux.x86:jar:1.1.200.v20140116-2212:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.swt:jar:3.102.1.v20140206-1334:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.workbench.addons.swt:jar:1.0.2.v20131129-1621:system
+[DEBUG]    p2.eclipse-feature:org.eclipse.e4.rcp:jar:1.2.2.v20140206-1358:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.emf.ecore:jar:2.10.1.v20140901-1043:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.emf.ecore.change:jar:2.10.0.v20140901-1043:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.emf.ecore.xmi:jar:2.10.1.v20140901-1043:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.emf.common:jar:2.10.1.v20140901-1043:system
+[DEBUG]    p2.eclipse-feature:org.eclipse.emf.common:jar:2.10.1.v20140901-1043:system
+[DEBUG]    p2.eclipse-feature:org.eclipse.emf.ecore:jar:2.10.1.v20140901-1043:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.p2.core:jar:2.3.0.v20131211-1531:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.p2.metadata:jar:2.2.0.v20131211-1531:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.p2.metadata.repository:jar:1.2.100.v20131209-2144:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.p2.repository:jar:2.3.0.v20131211-1531:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.p2.engine:jar:2.3.0.v20140506-1720:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.help:jar:3.6.0.v20130326-1254:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ltk.core.refactoring:jar:3.6.101.v20140817-1500:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.navigator:jar:3.5.401.v20140724-1117:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.team.core:jar:3.7.0.v20130514-1224:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.team.ui:jar:3.7.100.v20130710-1213:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ltk.ui.refactoring:jar:3.7.100.v20140324-1358:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.workbench:jar:3.105.2.v20140211-1711:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.update.configurator:jar:3.3.200.v20140203-1328:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.rcp:jar:4.3.0.v20140221-1700:system
+[DEBUG]    p2.eclipse-feature:org.eclipse.rcp:jar:4.3.2.v20140221-1700:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.ide.application:jar:1.0.500.v20140514-2033:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.navigator.resources:jar:3.4.700.v20140407-1004:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.ui.views.properties.tabbed:jar:3.6.0.v20140519-0906:system
+[DEBUG]    p2.eclipse-plugin:org.hamcrest.core:jar:1.3.0.v201303031735:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.swt.gtk.linux.x86:jar:3.103.1.v20140903-1947:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.launcher.gtk.linux.x86_64:jar:1.1.200.v20140116-2212:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.swt.gtk.linux.x86_64:jar:3.103.1.v20140903-1947:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.launcher.win32.win32.x86:jar:1.1.200.v20140116-2212:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.swt.win32.win32.x86:jar:3.103.1.v20140903-1947:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.launcher.win32.win32.x86_64:jar:1.1.200.v20140116-2212:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.swt.win32.win32.x86_64:jar:3.103.1.v20140903-1947:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.e4.ui.workbench.renderers.swt.cocoa:jar:0.11.100.v20130516-1100:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.equinox.launcher.cocoa.macosx.x86_64:jar:1.1.200.v20140116-2212:system
+[DEBUG]    p2.eclipse-plugin:org.eclipse.swt.cocoa.macosx.x86_64:jar:3.103.1.v20140903-1947:system
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes
+[DEBUG]   (f) reportDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/surefire.properties
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/com.andrearichiardi.eclipse.addons.tests.kepler-1.0.0-SNAPSHOT.jar
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/MANIFEST.MF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/p2artifacts.xml
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/local-artifacts.properties
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/surefire-reports
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes/README.md
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes/META-INF/MANIFEST.MF
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes/META-INF
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/p2content.xml
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/dev.properties
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.update/last.config.stamp
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.update/platform.xml
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.update
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.mainData.1
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.manager/.fileTable.8
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.manager/.fileTable.7
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.manager/.fileTableLock
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.manager
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.extraData.1
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.table.1
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.contributors.1
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.contributions.1
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.orphans.1
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime/.namespaces.1
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.core.runtime
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.equinox.app/.manager/.fileTableLock
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.equinox.app/.manager
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.equinox.app
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/config.ini
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/.manager/.fileTable.4
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/.manager/.fileTableLock
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/.manager/.fileTable.5
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/.manager
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/.lazy.1
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/114/1/.cp/jars/maven-surefire-common-2.17.jar
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/114/1/.cp/jars/surefire-api-2.17.jar
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/114/1/.cp/jars/surefire-booter-2.17.jar
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/114/1/.cp/jars
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/114/1/.cp
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/114/1
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/114
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/12/1/.cp/junit.jar
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/12/1/.cp
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/12/1
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/12
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/4/data/SCR
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/4/data
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/4
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/115/1/.cp/jars/surefire-junit4-2.17.jar
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/115/1/.cp/jars
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/115/1/.cp
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/115/1
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles/115
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/bundles
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/.bundledata.1
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi/.state.1
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/org.eclipse.osgi
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/1420559719835.log
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212/about.html
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212/launcher.gtk.linux.x86_64.properties
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212/eclipse_1508.so
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212/META-INF/ECLIPSE_.SF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212/META-INF/MANIFEST.MF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212/META-INF/ECLIPSE_.RSA
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212/META-INF
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212/about.html
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212/eclipse_1508.so
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212/META-INF/ECLIPSE_.SF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212/META-INF/MANIFEST.MF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212/META-INF/ECLIPSE_.RSA
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212/META-INF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212/launcher.gtk.linux.x86.properties
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212/about.html
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212/eclipse_1503.dll
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212/launcher.win32.win32.x86_64.properties
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212/META-INF/ECLIPSE_.SF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212/META-INF/MANIFEST.MF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212/META-INF/ECLIPSE_.RSA
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212/META-INF
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212/about.html
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212/eclipse_1503.dll
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212/launcher.win32.win32.x86.properties
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212/META-INF/ECLIPSE_.SF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212/META-INF/MANIFEST.MF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212/META-INF/ECLIPSE_.RSA
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212/META-INF
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212/about.html
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212/launcher.cocoa.macosx.x86_64.properties
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212/eclipse_1508.so
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212/META-INF/ECLIPSE_.SF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212/META-INF/MANIFEST.MF
+[INFO] Deleting file /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212/META-INF/ECLIPSE_.RSA
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212/META-INF
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work
+[INFO] Deleting directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target
+[DEBUG] Skipping non-existing directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes
+[DEBUG] Skipping non-existing directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/test-classes
+[DEBUG] Skipping non-existing directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/site
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.22.0:build-qualifier (default-build-qualifier) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] org.eclipse.tycho:tycho-packaging-plugin:jar:0.22.0:
+[DEBUG]    org.eclipse.tycho:tycho-core:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445:compile
+[DEBUG]          org.eclipse.tycho:sisu-equinox-api:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:tycho-metadata-model:jar:0.22.0:compile
+[DEBUG]          de.pdark:decentxml:jar:1.3:compile
+[DEBUG]       org.eclipse.tycho:tycho-embedder-api:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.7:compile (version managed from 1.4)
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.2:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:2.0.5:compile (version managed from 2.0.4)
+[DEBUG] Created new class realm plugin>org.eclipse.tycho:tycho-packaging-plugin:0.22.0
+[DEBUG] Importing foreign packages into class realm plugin>org.eclipse.tycho:tycho-packaging-plugin:0.22.0
+[DEBUG]   Imported:  < project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.eclipse.tycho:tycho-packaging-plugin:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-packaging-plugin:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.5
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-core:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-metadata-model:jar:0.22.0
+[DEBUG]   Excluded: de.pdark:decentxml:jar:1.3
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-embedder-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG] Configuring mojo org.eclipse.tycho:tycho-packaging-plugin:0.22.0:build-qualifier from plugin realm ClassRealm[plugin>org.eclipse.tycho:tycho-packaging-plugin:0.22.0, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.eclipse.tycho:tycho-packaging-plugin:0.22.0:build-qualifier' with basic configurator -->
+[DEBUG]   (f) baseDir = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler
+[DEBUG]   (f) execution = org.eclipse.tycho:tycho-packaging-plugin:0.22.0:build-qualifier {execution: default-build-qualifier}
+[DEBUG]   (s) format = yyyyMMddHHmm
+[DEBUG]   (f) packaging = eclipse-test-plugin
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@535a518c
+[DEBUG] -- end configuration --
+[INFO] The project's OSGi version is 1.0.0.201501061557
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.22.0:validate-id (default-validate-id) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] Configuring mojo org.eclipse.tycho:tycho-packaging-plugin:0.22.0:validate-id from plugin realm ClassRealm[plugin>org.eclipse.tycho:tycho-packaging-plugin:0.22.0, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.eclipse.tycho:tycho-packaging-plugin:0.22.0:validate-id' with basic configurator -->
+[DEBUG]   (f) packaging = eclipse-test-plugin
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG] -- end configuration --
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.22.0:validate-version (default-validate-version) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] Configuring mojo org.eclipse.tycho:tycho-packaging-plugin:0.22.0:validate-version from plugin realm ClassRealm[plugin>org.eclipse.tycho:tycho-packaging-plugin:0.22.0, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.eclipse.tycho:tycho-packaging-plugin:0.22.0:validate-version' with basic configurator -->
+[DEBUG]   (f) packaging = eclipse-test-plugin
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG]   (f) strictVersions = true
+[DEBUG] -- end configuration --
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.7:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]          backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile
+[DEBUG]       org.slf4j:slf4j-jdk14:jar:1.5.6:runtime
+[DEBUG]          org.slf4j:slf4j-api:jar:1.5.6:runtime
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.2.1:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.1:compile
+[DEBUG]          org.apache.maven.doxia:doxia-logging-api:jar:1.1:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.2:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.2.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.15:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.2:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:0.3:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.19:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.7
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.7
+[DEBUG]   Imported:  < project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.7
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.7
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.slf4j:slf4j-jdk14:jar:1.5.6
+[DEBUG]   Included: org.slf4j:slf4j-api:jar:1.5.6
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.5.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.2.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.1
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.15
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.2
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.3
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.19
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.2.1
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.2.1
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.2.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.7:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.7, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.7:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler, PatternSet [includes: {META-INF/}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@535a518c
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {env.DESKTOP_SESSION=ubuntustudio, env.OLDPWD=/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler, file.encoding.pkg=sun.io, env.SELINUX_INIT=YES, java.home=/usr/lib/jvm/java-8-oracle/jre, env.GDM_LANG=en, env.DISPLAY=:0.0, env.CLOJURE_EXT=/home/kapitan/.m2/repository/org/clojure/clojure/1.6.0/clojure-1.6.0.jar, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, env.XDG_VTNR=7, unqualifiedVersion=1.0.0, classworlds.conf=/usr/share/maven/bin/m2.conf, env.GLADE_CATALOG_PATH=:, env.XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/kapitan, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, env.LOGNAME=kapitan, env.XDG_SEAT=seat0, env.LC_PAPER=en_CA.UTF-8, env.SESSION_MANAGER=local/sea:@/tmp/.ICE-unix/2978,unix/sea:/tmp/.ICE-unix/2978, sun.os.patch.level=unknown, java.vendor.url=http://java.oracle.com/, env.XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, env.MANDATORY_PATH=/usr/share/gconf/ubuntustudio.mandatory.path, java.version=1.8.0_25, env.VISUAL=emacsclient -c -a emacs, env.J2SDKDIR=/usr/lib/jvm/java-8-oracle, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.LANGUAGE=en, env.XDG_MENU_PREFIX=xfce-, env.XDG_DATA_DIRS=/usr/share/ubuntustudio:/usr/share/xfce4:/usr/local/share/:/usr/share/:/usr/share, env.GNOME_KEYRING_CONTROL=/run/user/1000/keyring-Bli0NL, env.UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2816, user.name=kapitan, env.LANG=en_US.UTF-8, env.LC_MONETARY=en_CA.UTF-8, sun.io.unicode.encoding=UnicodeLittle, sun.jnu.encoding=UTF-8, env.DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-byBXsUzeYS, java.runtime.name=Java(TM) SE Runtime Environment, env.LC_NAME=en_CA.UTF-8, java.specification.name=Java Platform API Specification, env.GLADE_PIXMAP_PATH=:, user.timezone=Europe/Rome, env.LESSOPEN=| /usr/bin/lesspipe %s, path.separator=:, env.XMODIFIERS=@im=none, file.encoding=UTF-8, env.HOME=/home/kapitan, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X clean install -Dmaven.surefire.debug test, env.LC_TELEPHONE=en_CA.UTF-8, env._=/usr/bin/mvn, java.io.tmpdir=/tmp, env.LC_IDENTIFICATION=en_CA.UTF-8, env.GNOME_KEYRING_PID=2813, user.language=en, env.UPSTART_EVENTS=started xsession, line.separator=
+, env.SSH_AGENT_PID=2991, env.J2REDIR=/usr/lib/jvm/java-8-oracle/jre, tycho.env.osgi.os=linux, qualifiedVersion=1.0.0.201501061557, env.CLUTTER_IM_MODULE=xim, env.GLADE_MODULE_PATH=:, java.vm.info=mixed mode, java.vm.specification.name=Java Virtual Machine Specification, project.reporting.outputEncoding=UTF-8, tycho-version=0.22.0, junit-version=4.11, env.COLORTERM=rxvt-xpm, env.TEXTDOMAIN=im-config, env.LC_MEASUREMENT=en_CA.UTF-8, env.IM_CONFIG_PHASE=1, env.EDITOR=emacsclient -t, env.LC_TIME=en_CA.UTF-8, env.GDMSESSION=ubuntustudio, env.QT_ACCESSIBILITY=1, eclipse-repo.url=https://repo.eclipse.org/content/repositories/releases/, java.awt.printerjob=sun.print.PSPrinterJob, retrolambda-version=1.8.0, env.DEFAULTS_PATH=/usr/share/gconf/ubuntustudio.default.path, buildQualifier=201501061557, env.WINDOWID=92274698, env.GPGKEY=F42714E7, env.XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, env.JOB=dbus, os.name=Linux, java.specification.vendor=Oracle Corporation, env.CLOJURE_OPTS=-Xms128M -Xmx512M -server, env.TERM=rxvt-unicode-256color, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, maven.surefire.debug=true, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, env.PATH=/home/kapitan/bin:/home/kapitan/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/local/share/scala-2.10.3/bin:/usr/local/share/scala-2.10.3/sbt/bin:/usr/local/share/apache-maven/bin:/usr/local/share/android-sdk/platform-tools:/usr/local/share/android-sdk/tools, env.LESSCLOSE=/usr/bin/lesspipe %s %s, tycho.env.osgi.arch=x86_64, env.TEXTDOMAINDIR=/usr/share/locale/, java.class.version=52.0, env.SHLVL=1, tycho-extras.version=0.22.0, env.UPSTART_JOB=startxfce4, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, project.build.sourceEncoding=UTF-8, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, env.COLORFGBG=default;default, env.USER=kapitan, env.GTK_IM_MODULE=xim, env.SESSIONTYPE=, tycho.env.osgi.ws=gtk, java.vm.specification.version=1.8, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, awt.toolkit=sun.awt.X11.XToolkit, sun.cpu.isalist=, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, os.version=3.13.0-43-lowlatency, user.home=/home/kapitan, env.XDG_CURRENT_DESKTOP=XFCE, java.vm.vendor=Oracle Corporation, env.SESSION=ubuntustudio, env.JAVA_HOME=/usr/lib/jvm/java-8-oracle, env.XDG_SESSION_ID=c2, env.XAUTHORITY=/home/kapitan/.Xauthority, user.dir=/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, env.PWD=/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler, env.ALTERNATE_EDITOR=, sun.cpu.endian=little, java.vm.version=25.25-b02, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar, env.DERBY_HOME=/usr/lib/jvm/java-8-oracle/db, env.LC_ADDRESS=en_CA.UTF-8, os.arch=amd64, maven.build.version=Apache Maven 3.0.5, env.LC_NUMERIC=en_CA.UTF-8, sun.java.launcher=SUN_STANDARD, env.UPSTART_INSTANCE=, java.vm.specification.vendor=Oracle Corporation, file.separator=/, env.PAPERSIZE=letter, java.runtime.version=1.8.0_25-b17, env.SSH_AUTH_SOCK=/tmp/gpg-XNyaUT/S.gpg-agent.ssh, env.XMLLINT_INDENT=  , sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, env.QT4_IM_MODULE=xim, env.XDG_RUNTIME_DIR=/run/user/1000, env.XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntustudio:/usr/share/upstart/xdg:/etc/xdg:/etc/xdg, maven.version=3.0.5, user.country=US, env.SHELL=/bin/bash, maven.home=/usr/share/maven, env.INSTANCE=, java.vendor=Oracle Corporation, env.GPG_AGENT_INFO=/tmp/gpg-5xQMib/S.gpg-agent:2991:1, java.specification.version=1.8, sun.arch.data.model=64}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler
+excludes []
+includes [META-INF/]
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] file MANIFEST.MF has a filtered file extension
+[DEBUG] copy /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/META-INF/MANIFEST.MF to /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes/META-INF/MANIFEST.MF
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- tycho-compiler-plugin:0.22.0:compile (default-compile) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] org.eclipse.tycho:tycho-compiler-plugin:jar:0.22.0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-compat:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]          org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]             org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.7:compile (version managed from 1.4)
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.7:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.eclipse.tycho:tycho-core:jar:0.22.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.0.5:compile (version managed from 2.0.4)
+[DEBUG]       org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445:compile
+[DEBUG]          org.eclipse.tycho:sisu-equinox-api:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:tycho-metadata-model:jar:0.22.0:compile
+[DEBUG]          de.pdark:decentxml:jar:1.3:compile
+[DEBUG]       org.eclipse.tycho:tycho-embedder-api:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0:compile
+[DEBUG]    org.eclipse.tycho:tycho-compiler-jdt:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.jdt.core:jar:3.10.0.v20140604-1726:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.jdt.compiler.apt:jar:1.1.0.v20140509-1235:compile
+[DEBUG] Created new class realm plugin>org.eclipse.tycho:tycho-compiler-plugin:0.22.0
+[DEBUG] Importing foreign packages into class realm plugin>org.eclipse.tycho:tycho-compiler-plugin:0.22.0
+[DEBUG]   Imported:  < project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.eclipse.tycho:tycho-compiler-plugin:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:tycho-compiler-plugin:jar:0.22.0
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.5
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907
+[DEBUG]   Included: org.eclipse.tycho:tycho-compiler-jdt:jar:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.jdt.core:jar:3.10.0.v20140604-1726
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.jdt.compiler.apt:jar:1.1.0.v20140509-1235
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.apache.maven:maven-compat:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-6
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-core:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-metadata-model:jar:0.22.0
+[DEBUG]   Excluded: de.pdark:decentxml:jar:1.3
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-embedder-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0
+[DEBUG] Configuring mojo org.eclipse.tycho:tycho-compiler-plugin:0.22.0:compile from plugin realm ClassRealm[plugin>org.eclipse.tycho:tycho-compiler-plugin:0.22.0, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.eclipse.tycho:tycho-compiler-plugin:0.22.0:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler
+[DEBUG]   (f) buildDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target
+[DEBUG]   (f) compilerId = jdt
+[DEBUG]   (f) copyResources = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/generated-sources/annotations
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputFileName = com.andrearichiardi.eclipse.addons.tests.kepler-1.0.0-SNAPSHOT
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG]   (f) requireJREPackageImports = false
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@535a518c
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) source = 1.6
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) strictCompilerTarget = false
+[DEBUG]   (f) target = 1.6
+[DEBUG]   (f) useJDK = SYSTEM
+[DEBUG]   (f) useProjectSettings = false
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Manifest BREEs: [OSGi profile 'JavaSE-1.6' { source level: 1.6, target level: 1.6}]
+[DEBUG] Effective EE: OSGi profile 'JavaSE-1.6' { source level: 1.6, target level: 1.6}
+[DEBUG] Effective source/target: 1.6/1.6
+[DEBUG] Using compiler 'jdt'.
+[DEBUG] Source directories: [/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/src]
+[DEBUG] Classpath: [/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.jdt.annotation/2.0.0.v20140415-1436/org.eclipse.jdt.annotation-2.0.0.v20140415-1436.jar
+ /home/kapitan/.m2/repository/.cache/tycho/org.junit-4.11.0.v201303080030.jar/junit.jar[+junit/extensions/*:+junit/framework/*:+junit/runner/*:+junit/textui/*:+org/junit/*:+org/junit/experimental/*:+org/junit/experimental/categories/*:+org/junit/experimental/max/*:+org/junit/experimental/results/*:+org/junit/experimental/runners/*:+org/junit/experimental/theories/*:~org/junit/experimental/theories/internal/*:+org/junit/experimental/theories/suppliers/*:~org/junit/internal/*:~org/junit/internal/builders/*:~org/junit/internal/matchers/*:~org/junit/internal/requests/*:~org/junit/internal/runners/*:~org/junit/internal/runners/model/*:~org/junit/internal/runners/rules/*:~org/junit/internal/runners/statements/*:+org/junit/matchers/*:+org/junit/rules/*:+org/junit/runner/*:+org/junit/runner/manipulation/*:+org/junit/runner/notification/*:+org/junit/runners/*:+org/junit/runners/model/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.hamcrest.core/1.3.0.v201303031735/org.hamcrest.core-1.3.0.v201303031735.jar[+org/hamcrest/*:+org/hamcrest/core/*:~org/hamcrest/internal/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.contexts/1.3.1.v20130905-0905/org.eclipse.e4.core.contexts-1.3.1.v20130905-0905.jar[+org/eclipse/e4/core/contexts/*:~org/eclipse/e4/core/internal/contexts/*:~org/eclipse/e4/core/internal/contexts/osgi/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.di/1.3.0.v20130514-1256/org.eclipse.e4.core.di-1.3.0.v20130514-1256.jar[~org/eclipse/e4/core/di/*:+org/eclipse/e4/core/di/annotations/*:~org/eclipse/e4/core/di/suppliers/*:~org/eclipse/e4/core/internal/di/*:~org/eclipse/e4/core/internal/di/osgi/*:~org/eclipse/e4/core/internal/di/shared/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.osgi/3.9.1.v20140110-1610/org.eclipse.osgi-3.9.1.v20140110-1610.jar[+org/osgi/framework/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.ds/1.4.101.v20130813-1853/org.eclipse.equinox.ds-1.4.101.v20130813-1853.jar[~org/eclipse/equinox/internal/ds/*:~org/eclipse/equinox/internal/ds/impl/*:~org/eclipse/equinox/internal/ds/model/*:~org/eclipse/equinox/internal/ds/storage/file/*:~org/eclipse/equinox/internal/util/io/*:~org/eclipse/equinox/internal/util/xml/*:~org/eclipse/equinox/internal/util/xml/impl/*:~org/eclipse/equinox/internal/util/string/*:+org/apache/felix/scr/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.databinding.observable/1.4.1.v20130515-1857/org.eclipse.core.databinding.observable-1.4.1.v20130515-1857.jar[+org/eclipse/core/databinding/observable/*:+org/eclipse/core/databinding/observable/list/*:+org/eclipse/core/databinding/observable/map/*:+org/eclipse/core/databinding/observable/masterdetail/*:+org/eclipse/core/databinding/observable/set/*:+org/eclipse/core/databinding/observable/value/*:+org/eclipse/core/databinding/util/*:~org/eclipse/core/internal/databinding/identity/*:~org/eclipse/core/internal/databinding/observable/*:~org/eclipse/core/internal/databinding/observable/masterdetail/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.common/3.6.200.v20130402-1505/org.eclipse.equinox.common-3.6.200.v20130402-1505.jar[?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.databinding/1.4.1.v20130515-1857/org.eclipse.core.databinding-1.4.1.v20130515-1857.jar[+org/eclipse/core/databinding/*:+org/eclipse/core/databinding/conversion/*:+org/eclipse/core/databinding/validation/*:~org/eclipse/core/internal/databinding/*:~org/eclipse/core/internal/databinding/conversion/*:~org/eclipse/core/internal/databinding/validation/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.databinding.property/1.4.200.v20130515-1857/org.eclipse.core.databinding.property-1.4.200.v20130515-1857.jar[+org/eclipse/core/databinding/property/*:+org/eclipse/core/databinding/property/list/*:+org/eclipse/core/databinding/property/map/*:+org/eclipse/core/databinding/property/set/*:+org/eclipse/core/databinding/property/value/*:~org/eclipse/core/internal/databinding/property/*:~org/eclipse/core/internal/databinding/property/list/*:~org/eclipse/core/internal/databinding/property/map/*:~org/eclipse/core/internal/databinding/property/set/*:~org/eclipse/core/internal/databinding/property/value/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.services/1.1.0.v20130515-1343/org.eclipse.e4.core.services-1.1.0.v20130515-1343.jar[~org/eclipse/e4/core/internal/services/*:~org/eclipse/e4/core/services/adapter/*:~org/eclipse/e4/core/services/contributions/*:+org/eclipse/e4/core/services/events/*:~org/eclipse/e4/core/services/log/*:~org/eclipse/e4/core/services/statusreporter/*:~org/eclipse/e4/core/services/translation/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.preferences/3.5.100.v20130422-1538/org.eclipse.equinox.preferences-3.5.100.v20130422-1538.jar[?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.registry/3.5.301.v20130717-1549/org.eclipse.equinox.registry-3.5.301.v20130717-1549.jar[?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.jobs/3.5.300.v20130429-1813/org.eclipse.core.jobs-3.5.300.v20130429-1813.jar[?**/*]
+ /home/kapitan/.m2/repository/com/andrearichiardi/eclipse/com.andrearichiardi.eclipse.addons/1.0.0-SNAPSHOT/com.andrearichiardi.eclipse.addons-1.0.0-SNAPSHOT.jar[+com/andrearichiardi/eclipse/addons/*:+com/andrearichiardi/eclipse/addons/adapter/*:+com/andrearichiardi/eclipse/addons/di/*:+com/andrearichiardi/eclipse/addons/di/context/*:+com/andrearichiardi/eclipse/addons/log/*:+com/andrearichiardi/eclipse/addons/text/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/javax.annotation/1.1.0.v201209060031/javax.annotation-1.1.0.v201209060031.jar[+javax/annotation/*:?**/*]
+ /home/kapitan/.m2/repository/p2/osgi/bundle/javax.inject/1.0.0.v20091030/javax.inject-1.0.0.v20091030.jar[+javax/inject/*:?**/*]]
+[DEBUG] Output directory: /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.7:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.7, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.7:testResources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@535a518c
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {env.DESKTOP_SESSION=ubuntustudio, env.OLDPWD=/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler, file.encoding.pkg=sun.io, env.SELINUX_INIT=YES, java.home=/usr/lib/jvm/java-8-oracle/jre, env.GDM_LANG=en, env.DISPLAY=:0.0, env.CLOJURE_EXT=/home/kapitan/.m2/repository/org/clojure/clojure/1.6.0/clojure-1.6.0.jar, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, env.XDG_VTNR=7, unqualifiedVersion=1.0.0, classworlds.conf=/usr/share/maven/bin/m2.conf, env.GLADE_CATALOG_PATH=:, env.XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/kapitan, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, env.LOGNAME=kapitan, env.XDG_SEAT=seat0, env.LC_PAPER=en_CA.UTF-8, env.SESSION_MANAGER=local/sea:@/tmp/.ICE-unix/2978,unix/sea:/tmp/.ICE-unix/2978, sun.os.patch.level=unknown, java.vendor.url=http://java.oracle.com/, env.XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, env.MANDATORY_PATH=/usr/share/gconf/ubuntustudio.mandatory.path, java.version=1.8.0_25, env.VISUAL=emacsclient -c -a emacs, env.J2SDKDIR=/usr/lib/jvm/java-8-oracle, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.LANGUAGE=en, env.XDG_MENU_PREFIX=xfce-, env.XDG_DATA_DIRS=/usr/share/ubuntustudio:/usr/share/xfce4:/usr/local/share/:/usr/share/:/usr/share, env.GNOME_KEYRING_CONTROL=/run/user/1000/keyring-Bli0NL, env.UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2816, user.name=kapitan, env.LANG=en_US.UTF-8, env.LC_MONETARY=en_CA.UTF-8, sun.io.unicode.encoding=UnicodeLittle, sun.jnu.encoding=UTF-8, env.DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-byBXsUzeYS, java.runtime.name=Java(TM) SE Runtime Environment, env.LC_NAME=en_CA.UTF-8, java.specification.name=Java Platform API Specification, env.GLADE_PIXMAP_PATH=:, user.timezone=Europe/Rome, env.LESSOPEN=| /usr/bin/lesspipe %s, path.separator=:, env.XMODIFIERS=@im=none, file.encoding=UTF-8, env.HOME=/home/kapitan, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X clean install -Dmaven.surefire.debug test, env.LC_TELEPHONE=en_CA.UTF-8, env._=/usr/bin/mvn, java.io.tmpdir=/tmp, env.LC_IDENTIFICATION=en_CA.UTF-8, env.GNOME_KEYRING_PID=2813, user.language=en, env.UPSTART_EVENTS=started xsession, line.separator=
+, env.SSH_AGENT_PID=2991, env.J2REDIR=/usr/lib/jvm/java-8-oracle/jre, tycho.env.osgi.os=linux, qualifiedVersion=1.0.0.201501061557, env.CLUTTER_IM_MODULE=xim, env.GLADE_MODULE_PATH=:, java.vm.info=mixed mode, java.vm.specification.name=Java Virtual Machine Specification, project.reporting.outputEncoding=UTF-8, tycho-version=0.22.0, junit-version=4.11, env.COLORTERM=rxvt-xpm, env.TEXTDOMAIN=im-config, env.LC_MEASUREMENT=en_CA.UTF-8, env.IM_CONFIG_PHASE=1, env.EDITOR=emacsclient -t, env.LC_TIME=en_CA.UTF-8, env.GDMSESSION=ubuntustudio, env.QT_ACCESSIBILITY=1, eclipse-repo.url=https://repo.eclipse.org/content/repositories/releases/, java.awt.printerjob=sun.print.PSPrinterJob, retrolambda-version=1.8.0, env.DEFAULTS_PATH=/usr/share/gconf/ubuntustudio.default.path, buildQualifier=201501061557, env.WINDOWID=92274698, env.GPGKEY=F42714E7, env.XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, env.JOB=dbus, os.name=Linux, java.specification.vendor=Oracle Corporation, env.CLOJURE_OPTS=-Xms128M -Xmx512M -server, env.TERM=rxvt-unicode-256color, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, maven.surefire.debug=true, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, env.PATH=/home/kapitan/bin:/home/kapitan/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/local/share/scala-2.10.3/bin:/usr/local/share/scala-2.10.3/sbt/bin:/usr/local/share/apache-maven/bin:/usr/local/share/android-sdk/platform-tools:/usr/local/share/android-sdk/tools, env.LESSCLOSE=/usr/bin/lesspipe %s %s, tycho.env.osgi.arch=x86_64, env.TEXTDOMAINDIR=/usr/share/locale/, java.class.version=52.0, env.SHLVL=1, tycho-extras.version=0.22.0, env.UPSTART_JOB=startxfce4, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, project.build.sourceEncoding=UTF-8, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, env.COLORFGBG=default;default, env.USER=kapitan, env.GTK_IM_MODULE=xim, env.SESSIONTYPE=, tycho.env.osgi.ws=gtk, java.vm.specification.version=1.8, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, awt.toolkit=sun.awt.X11.XToolkit, sun.cpu.isalist=, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, os.version=3.13.0-43-lowlatency, user.home=/home/kapitan, env.XDG_CURRENT_DESKTOP=XFCE, java.vm.vendor=Oracle Corporation, env.SESSION=ubuntustudio, env.JAVA_HOME=/usr/lib/jvm/java-8-oracle, env.XDG_SESSION_ID=c2, env.XAUTHORITY=/home/kapitan/.Xauthority, user.dir=/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, env.PWD=/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler, env.ALTERNATE_EDITOR=, sun.cpu.endian=little, java.vm.version=25.25-b02, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.x.jar, env.DERBY_HOME=/usr/lib/jvm/java-8-oracle/db, env.LC_ADDRESS=en_CA.UTF-8, os.arch=amd64, maven.build.version=Apache Maven 3.0.5, env.LC_NUMERIC=en_CA.UTF-8, sun.java.launcher=SUN_STANDARD, env.UPSTART_INSTANCE=, java.vm.specification.vendor=Oracle Corporation, file.separator=/, env.PAPERSIZE=letter, java.runtime.version=1.8.0_25-b17, env.SSH_AUTH_SOCK=/tmp/gpg-XNyaUT/S.gpg-agent.ssh, env.XMLLINT_INDENT=  , sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, env.QT4_IM_MODULE=xim, env.XDG_RUNTIME_DIR=/run/user/1000, env.XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntustudio:/usr/share/upstart/xdg:/etc/xdg:/etc/xdg, maven.version=3.0.5, user.country=US, env.SHELL=/bin/bash, maven.home=/usr/share/maven, env.INSTANCE=, java.vendor=Oracle Corporation, env.GPG_AGENT_INFO=/tmp/gpg-5xQMib/S.gpg-agent:2991:1, java.specification.version=1.8, sun.arch.data.model=64}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/src/test/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/src/test/resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- target-platform-configuration:0.22.0:target-platform (default-target-platform) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] org.eclipse.tycho:target-platform-configuration:jar:0.22.0:
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.7:compile (version managed from 2.0.4)
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.7:compile (version managed from 1.4)
+[DEBUG]    org.eclipse.tycho:sisu-equinox-api:jar:0.22.0:compile
+[DEBUG]    org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:0.22.0:compile
+[DEBUG]    org.eclipse.tycho:tycho-core:jar:0.22.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:2.2:compile
+[DEBUG]          org.codehaus.plexus:plexus-io:jar:2.0.5:compile (version managed from 2.0.4)
+[DEBUG]       org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907:compile
+[DEBUG]       org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445:compile
+[DEBUG]       org.eclipse.tycho:tycho-metadata-model:jar:0.22.0:compile
+[DEBUG]          de.pdark:decentxml:jar:1.3:compile
+[DEBUG]       org.eclipse.tycho:tycho-embedder-api:jar:0.22.0:compile
+[DEBUG]          org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0:compile
+[DEBUG]       org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0:compile
+[DEBUG] Created new class realm plugin>org.eclipse.tycho:target-platform-configuration:0.22.0
+[DEBUG] Importing foreign packages into class realm plugin>org.eclipse.tycho:target-platform-configuration:0.22.0
+[DEBUG]   Imported:  < project>com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.eclipse.tycho:target-platform-configuration:0.22.0
+[DEBUG]   Included: org.eclipse.tycho:target-platform-configuration:jar:0.22.0
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.5
+[DEBUG]   Included: org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.p2.resolver.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-core:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:sisu-equinox-embedder:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.osgi:jar:3.10.0.v20140606-1445
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-metadata-model:jar:0.22.0
+[DEBUG]   Excluded: de.pdark:decentxml:jar:1.3
+[DEBUG]   Excluded: org.eclipse.tycho:tycho-embedder-api:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.embedder.shared:jar:0.22.0
+[DEBUG]   Excluded: org.eclipse.tycho:org.eclipse.tycho.core.shared:jar:0.22.0
+[DEBUG] Configuring mojo org.eclipse.tycho:target-platform-configuration:0.22.0:target-platform from plugin realm ClassRealm[plugin>org.eclipse.tycho:target-platform-configuration:0.22.0, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.eclipse.tycho:target-platform-configuration:0.22.0:target-platform' with basic configurator -->
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG] -- end configuration --
+[INFO] 
+[INFO] --- tycho-packaging-plugin:0.22.0:package-plugin (default-package-plugin) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] Configuring mojo org.eclipse.tycho:tycho-packaging-plugin:0.22.0:package-plugin from plugin realm ClassRealm[plugin>org.eclipse.tycho:tycho-packaging-plugin:0.22.0, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.eclipse.tycho:tycho-packaging-plugin:0.22.0:package-plugin' with basic configurator -->
+[DEBUG]   (s) addMavenDescriptor = false
+[DEBUG]   (f) archive = org.apache.maven.archiver.MavenArchiveConfiguration@8c43966
+[DEBUG]   (f) buildDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target
+[DEBUG]   (f) finalName = com.andrearichiardi.eclipse.addons.tests.kepler-1.0.0-SNAPSHOT
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG]   (f) qualifier = 201501061557
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@535a518c
+[DEBUG]   (f) strictBinIncludes = true
+[DEBUG]   (f) useDefaultExcludes = true
+[DEBUG] -- end configuration --
+[INFO] Building jar: /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/com.andrearichiardi.eclipse.addons.tests.kepler-1.0.0-SNAPSHOT.jar
+[DEBUG] adding directory META-INF/
+[DEBUG] adding entry META-INF/MANIFEST.MF
+[DEBUG] adding entry README.md
+[DEBUG] META-INF/MANIFEST.MF already added, skipping
+[INFO] 
+[INFO] --- tycho-p2-plugin:0.22.0:p2-metadata-default (default-p2-metadata-default) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] Configuring mojo org.eclipse.tycho:tycho-p2-plugin:0.22.0:p2-metadata-default from plugin realm ClassRealm[plugin>org.eclipse.tycho:tycho-p2-plugin:0.22.0, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.eclipse.tycho:tycho-p2-plugin:0.22.0:p2-metadata-default' with basic configurator -->
+[DEBUG]   (f) attachP2Metadata = true
+[DEBUG]   (f) baselineMode = warn
+[DEBUG]   (f) baselineReplace = all
+[DEBUG]   (f) defaultP2Metadata = true
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG] -- end configuration --
+[INFO] 
+[INFO] --- tycho-surefire-plugin:0.22.0:test (default-test) @ com.andrearichiardi.eclipse.addons.tests.kepler ---
+[DEBUG] Configuring mojo org.eclipse.tycho:tycho-surefire-plugin:0.22.0:test from plugin realm ClassRealm[plugin>org.eclipse.tycho:tycho-surefire-plugin:0.22.0, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.eclipse.tycho:tycho-surefire-plugin:0.22.0:test' with basic configurator -->
+[DEBUG]   (f) argLine = -Xmx512m
+[DEBUG]   (s) id = org.eclipse.core.runtime
+[DEBUG]   (s) level = 1
+[DEBUG]   (s) autoStart = true
+[DEBUG]   (s) id = org.eclipse.equinox.ds
+[DEBUG]   (s) level = 2
+[DEBUG]   (s) autoStart = true
+[DEBUG]   (f) bundleStartLevel = [org.eclipse.sisu.equinox.launching.BundleStartLevel@4c18516, org.eclipse.sisu.equinox.launching.BundleStartLevel@2a0b901c]
+[DEBUG]   (f) deleteOsgiDataDirectory = true
+[DEBUG]   (f) failIfNoTests = true
+[DEBUG]   (f) osgiDataDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/data
+[DEBUG]   (f) perCoreThreadCount = true
+[DEBUG]   (f) pluginArtifacts = [org.eclipse.tycho:tycho-surefire-plugin:maven-plugin:0.22.0:, org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile, org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile, org.codehaus.plexus:plexus-utils:jar:3.0.7:compile, org.sonatype.aether:aether-util:jar:1.7:compile, org.codehaus.plexus:plexus-interpolation:jar:1.14:compile, org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile, org.sonatype.plexus:plexus-cipher:jar:1.7:compile, org.codehaus.plexus:plexus-archiver:jar:2.2:compile, org.codehaus.plexus:plexus-io:jar:2.0.5:compile, org.eclipse.tycho:org.eclipse.osgi.compatibility.state:jar:1.0.0.v20140403-1907:compile, org.eclipse.tycho:sisu-equinox-launching:jar:0.22.0:compile, org.apache.commons:commons-exec:jar:1.2:compile, org.eclipse.tycho:org.eclipse.tycho.surefire.osgibooter:jar:0.22.0:runtime, org.eclipse.tycho:org.eclipse.tycho.surefire.junit:jar:0.22.0:runtime, org.eclipse.tycho:org.eclipse.tycho.surefire.junit4:jar:0.22.0:runtime, org.eclipse.tycho:org.eclipse.tycho.surefire.junit47:jar:0.22.0:runtime, org.apache.maven.surefire:surefire-api:jar:2.17:compile, org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile, org.apache.maven.surefire:maven-surefire-common:jar:2.17:compile, org.apache.maven.surefire:surefire-booter:jar:2.17:compile, org.apache.commons:commons-lang3:jar:3.1:compile]
+[DEBUG]   (f) profileName = DefaultProfile
+[DEBUG]   (f) project = MavenProject: com.andrearichiardi.eclipse:com.andrearichiardi.eclipse.addons.tests.kepler:1.0.0-SNAPSHOT @ /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/pom.xml
+[DEBUG]   (f) redirectTestOutputToFile = false
+[DEBUG]   (f) reportsDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/surefire-reports
+[DEBUG]   (f) runOrder = filesystem
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@535a518c
+[DEBUG]   (f) showEclipseLog = true
+[DEBUG]   (f) surefireProperties = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/surefire.properties
+[DEBUG]   (f) testClassesDirectory = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/classes
+[DEBUG]   (f) testFailureIgnore = false
+[DEBUG]   (f) testRuntime = default
+[DEBUG]   (f) useJDK = SYSTEM
+[DEBUG]   (f) useUIHarness = false
+[DEBUG]   (f) useUIThread = true
+[DEBUG]   (f) useUnlimitedThreads = false
+[DEBUG]   (f) work = /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work
+[DEBUG] -- end configuration --
+[DEBUG] Using test framework provider org.eclipse.tycho.surefire.provider.impl.JUnit4Provider
+[DEBUG] Expanding: /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.launcher.gtk.linux.x86/1.1.200.v20140116-2212/org.eclipse.equinox.launcher.gtk.linux.x86-1.1.200.v20140116-2212.jar into /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212
+[DEBUG] expand complete
+[DEBUG] Expanding: /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.launcher.gtk.linux.x86_64/1.1.200.v20140116-2212/org.eclipse.equinox.launcher.gtk.linux.x86_64-1.1.200.v20140116-2212.jar into /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212
+[DEBUG] expand complete
+[DEBUG] Expanding: /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.launcher.win32.win32.x86/1.1.200.v20140116-2212/org.eclipse.equinox.launcher.win32.win32.x86-1.1.200.v20140116-2212.jar into /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212
+[DEBUG] expand complete
+[DEBUG] Expanding: /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.launcher.win32.win32.x86_64/1.1.200.v20140116-2212/org.eclipse.equinox.launcher.win32.win32.x86_64-1.1.200.v20140116-2212.jar into /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212
+[DEBUG] expand complete
+[DEBUG] Expanding: /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.launcher.cocoa.macosx.x86_64/1.1.200.v20140116-2212/org.eclipse.equinox.launcher.cocoa.macosx.x86_64-1.1.200.v20140116-2212.jar into /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212
+[DEBUG] expand complete
+[DEBUG] Installation OSGI bundles:
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/com/andrearichiardi/eclipse/com.andrearichiardi.eclipse.addons/1.0.0-SNAPSHOT/com.andrearichiardi.eclipse.addons-1.0.0-SNAPSHOT.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.contexts/1.3.1.v20130905-0905/org.eclipse.e4.core.contexts-1.3.1.v20130905-0905.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.di/1.3.0.v20130514-1256/org.eclipse.e4.core.di-1.3.0.v20130514-1256.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.ds/1.4.101.v20130813-1853/org.eclipse.equinox.ds-1.4.101.v20130813-1853.jar@2:start
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.services/1.1.0.v20130515-1343/org.eclipse.e4.core.services-1.1.0.v20130515-1343.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.apache.commons.lang/2.6.0.v201404270220/org.apache.commons.lang-2.6.0.v201404270220.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/javax.annotation/1.1.0.v201209060031/javax.annotation-1.1.0.v201209060031.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/javax.inject/1.0.0.v20091030/javax.inject-1.0.0.v20091030.jar
+[DEBUG] 	reference:file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.databinding.observable/1.4.1.v20130515-1857/org.eclipse.core.databinding.observable-1.4.1.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.databinding/1.4.1.v20130515-1857/org.eclipse.core.databinding-1.4.1.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.junit/4.11.0.v201303080030/org.junit-4.11.0.v201303080030.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.jdt.annotation/2.0.0.v20140415-1436/org.eclipse.jdt.annotation-2.0.0.v20140415-1436.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.databinding.property/1.4.200.v20130515-1857/org.eclipse.core.databinding.property-1.4.200.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/javax.xml/1.3.4.v201005080400/javax.xml-1.3.4.v201005080400.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.apache.batik.css/1.6.0.v201011041432/org.apache.batik.css-1.6.0.v201011041432.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.apache.batik.util/1.6.0.v201011041432/org.apache.batik.util-1.6.0.v201011041432.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.w3c.css.sac/1.3.1.v200903091627/org.w3c.css.sac-1.3.1.v200903091627.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.w3c.dom.svg/1.1.0.v201011041433/org.w3c.dom.svg-1.1.0.v201011041433.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.apache.batik.util.gui/1.6.0.v201011041432/org.apache.batik.util.gui-1.6.0.v201011041432.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.apache.felix.gogo.command/0.10.0.v201209301215/org.apache.felix.gogo.command-0.10.0.v201209301215.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.apache.felix.gogo.runtime/0.10.0.v201209301036/org.apache.felix.gogo.runtime-0.10.0.v201209301036.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.osgi.services/3.3.100.v20130513-1956/org.eclipse.osgi.services-3.3.100.v20130513-1956.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.apache.felix.gogo.shell/0.10.0.v201212101605/org.apache.felix.gogo.shell-0.10.0.v201212101605.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui/3.105.0.v20130522-1122/org.eclipse.ui-3.105.0.v20130522-1122.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.resources/3.9.1.v20140825-1431/org.eclipse.core.resources-3.9.1.v20140825-1431.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.jface.text/3.8.101.v20130802-1147/org.eclipse.jface.text-3.8.101.v20130802-1147.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.ide/3.9.2.v20131004-0923/org.eclipse.ui.ide-3.9.2.v20131004-0923.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.views/3.7.0.v20140408-0703/org.eclipse.ui.views-3.7.0.v20140408-0703.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.workbench.texteditor/3.9.0.v20140411-1521/org.eclipse.ui.workbench.texteditor-3.9.0.v20140411-1521.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.runtime/3.9.100.v20131218-1515/org.eclipse.core.runtime-3.9.100.v20131218-1515.jar@1:start
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.expressions/3.4.501.v20131118-1915/org.eclipse.core.expressions-3.4.501.v20131118-1915.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.editors/3.8.200.v20140401-1310/org.eclipse.ui.editors-3.8.200.v20140401-1310.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.forms/3.6.100.v20140422-1825/org.eclipse.ui.forms-3.6.100.v20140422-1825.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.compare.core/3.5.400.v20130903-0736/org.eclipse.compare.core-3.5.400.v20130903-0736.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/com.ibm.icu/50.1.1.v201304230130/com.ibm.icu-50.1.1.v201304230130.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.compare/3.5.501.v20140817-1445/org.eclipse.compare-3.5.501.v20140817-1445.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.commands/3.6.100.v20130515-1857/org.eclipse.core.commands-3.6.100.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.common/3.6.200.v20130402-1505/org.eclipse.equinox.common-3.6.200.v20130402-1505.jar@2:start
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.contenttype/3.4.200.v20130326-1255/org.eclipse.core.contenttype-3.4.200.v20130326-1255.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.preferences/3.5.100.v20130422-1538/org.eclipse.equinox.preferences-3.5.100.v20130422-1538.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.registry/3.5.301.v20130717-1549/org.eclipse.equinox.registry-3.5.301.v20130717-1549.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.databinding.beans/1.2.200.v20130515-1857/org.eclipse.core.databinding.beans-1.2.200.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.text/3.5.300.v20130515-1451/org.eclipse.text-3.5.300.v20130515-1451.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.filesystem/1.4.100.v20140514-1614/org.eclipse.core.filesystem-1.4.100.v20140514-1614.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.filebuffers/3.5.400.v20140127-1516/org.eclipse.core.filebuffers-3.5.400.v20140127-1516.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.jobs/3.5.300.v20130429-1813/org.eclipse.core.jobs-3.5.300.v20130429-1813.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.security/1.2.0.v20130424-1801/org.eclipse.equinox.security-1.2.0.v20130424-1801.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.core.net/1.2.200.v20140124-2013/org.eclipse.core.net-1.2.200.v20140124-2013.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.app/1.3.100.v20130327-1442/org.eclipse.equinox.app-1.3.100.v20130327-1442.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.commands/0.10.2.v20130515-1857/org.eclipse.e4.core.commands-0.10.2.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.core.di.extensions/0.11.100.v20130514-1256/org.eclipse.e4.core.di.extensions-0.11.100.v20130514-1256.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.css.core/0.10.100.v20130515-1857/org.eclipse.e4.ui.css.core-0.10.100.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.css.swt/0.11.0.v20130515-1857/org.eclipse.e4.ui.css.swt-0.11.0.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.w3c.dom.smil/1.0.0.v200806040011/org.w3c.dom.smil-1.0.0.v200806040011.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.css.swt.theme/0.9.100.v20130515-1857/org.eclipse.e4.ui.css.swt.theme-0.9.100.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.di/1.0.0.v20130515-1857/org.eclipse.e4.ui.di-1.0.0.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.widgets/1.0.0.v20130515-1857/org.eclipse.e4.ui.widgets-1.0.0.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.event/1.3.0.v20130327-1442/org.eclipse.equinox.event-1.3.0.v20130327-1442.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.launcher/1.3.0.v20130327-1440/org.eclipse.equinox.launcher-1.3.0.v20130327-1440.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.simpleconfigurator/1.0.400.v20130327-2119/org.eclipse.equinox.simpleconfigurator-1.0.400.v20130327-2119.jar@1:start
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.util/1.0.500.v20130404-1337/org.eclipse.equinox.util-1.0.500.v20130404-1337.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.jface.databinding/1.6.200.v20130515-1857/org.eclipse.jface.databinding-1.6.200.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.workbench3/0.12.0.v20130515-1857/org.eclipse.e4.ui.workbench3-0.12.0.v20130515-1857.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.console/1.0.100.v20130429-0953/org.eclipse.equinox.console-1.0.100.v20130429-0953.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.bidi/0.10.0.v20130327-1442/org.eclipse.equinox.bidi-0.10.0.v20130327-1442.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.jface/3.9.1.v20130725-1141/org.eclipse.jface-3.9.1.v20130725-1141.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.workbench.swt/0.12.2.v20140117-1939/org.eclipse.e4.ui.workbench.swt-0.12.2.v20140117-1939.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.bindings/0.10.102.v20140117-1939/org.eclipse.e4.ui.bindings-0.10.102.v20140117-1939.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.model.workbench/1.0.1.v20131118-1956/org.eclipse.e4.ui.model.workbench-1.0.1.v20131118-1956.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.services/1.0.1.v20131118-1940/org.eclipse.e4.ui.services-1.0.1.v20131118-1940.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.workbench.renderers.swt/0.11.2.v20140205-1834/org.eclipse.e4.ui.workbench.renderers.swt-0.11.2.v20140205-1834.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.workbench/1.0.2.v20131202-1739/org.eclipse.e4.ui.workbench-1.0.2.v20131202-1739.jar
+[DEBUG] 	reference:file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt/3.102.1.v20140206-1334/org.eclipse.swt-3.102.1.v20140206-1334.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.gtk.linux.x86/3.102.1.v20140206-1358/org.eclipse.swt.gtk.linux.x86-3.102.1.v20140206-1358.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.workbench.addons.swt/1.0.2.v20131129-1621/org.eclipse.e4.ui.workbench.addons.swt-1.0.2.v20131129-1621.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.emf.ecore/2.10.1.v20140901-1043/org.eclipse.emf.ecore-2.10.1.v20140901-1043.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.emf.ecore.change/2.10.0.v20140901-1043/org.eclipse.emf.ecore.change-2.10.0.v20140901-1043.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.emf.ecore.xmi/2.10.1.v20140901-1043/org.eclipse.emf.ecore.xmi-2.10.1.v20140901-1043.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.emf.common/2.10.1.v20140901-1043/org.eclipse.emf.common-2.10.1.v20140901-1043.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.p2.core/2.3.0.v20131211-1531/org.eclipse.equinox.p2.core-2.3.0.v20131211-1531.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.p2.metadata/2.2.0.v20131211-1531/org.eclipse.equinox.p2.metadata-2.2.0.v20131211-1531.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.p2.metadata.repository/1.2.100.v20131209-2144/org.eclipse.equinox.p2.metadata.repository-1.2.100.v20131209-2144.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.p2.repository/2.3.0.v20131211-1531/org.eclipse.equinox.p2.repository-2.3.0.v20131211-1531.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.p2.engine/2.3.0.v20140506-1720/org.eclipse.equinox.p2.engine-2.3.0.v20140506-1720.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.help/3.6.0.v20130326-1254/org.eclipse.help-3.6.0.v20130326-1254.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ltk.core.refactoring/3.6.101.v20140817-1500/org.eclipse.ltk.core.refactoring-3.6.101.v20140817-1500.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.navigator/3.5.401.v20140724-1117/org.eclipse.ui.navigator-3.5.401.v20140724-1117.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.team.core/3.7.0.v20130514-1224/org.eclipse.team.core-3.7.0.v20130514-1224.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.team.ui/3.7.100.v20130710-1213/org.eclipse.team.ui-3.7.100.v20130710-1213.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ltk.ui.refactoring/3.7.100.v20140324-1358/org.eclipse.ltk.ui.refactoring-3.7.100.v20140324-1358.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.workbench/3.105.2.v20140211-1711/org.eclipse.ui.workbench-3.105.2.v20140211-1711.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.update.configurator/3.3.200.v20140203-1328/org.eclipse.update.configurator-3.3.200.v20140203-1328.jar@3:start
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.rcp/4.3.0.v20140221-1700/org.eclipse.rcp-4.3.0.v20140221-1700.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.ide.application/1.0.500.v20140514-2033/org.eclipse.ui.ide.application-1.0.500.v20140514-2033.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.navigator.resources/3.4.700.v20140407-1004/org.eclipse.ui.navigator.resources-3.4.700.v20140407-1004.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.ui.views.properties.tabbed/3.6.0.v20140519-0906/org.eclipse.ui.views.properties.tabbed-3.6.0.v20140519-0906.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.hamcrest.core/1.3.0.v201303031735/org.hamcrest.core-1.3.0.v201303031735.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.gtk.linux.x86/3.103.1.v20140903-1947/org.eclipse.swt.gtk.linux.x86-3.103.1.v20140903-1947.jar
+[DEBUG] 	reference:file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20140116-2212
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.gtk.linux.x86_64/3.102.1.v20140206-1358/org.eclipse.swt.gtk.linux.x86_64-3.102.1.v20140206-1358.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.gtk.linux.x86_64/3.103.1.v20140903-1947/org.eclipse.swt.gtk.linux.x86_64-3.103.1.v20140903-1947.jar
+[DEBUG] 	reference:file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.win32.win32.x86/3.102.1.v20140206-1358/org.eclipse.swt.win32.win32.x86-3.102.1.v20140206-1358.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.win32.win32.x86/3.103.1.v20140903-1947/org.eclipse.swt.win32.win32.x86-3.103.1.v20140903-1947.jar
+[DEBUG] 	reference:file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.win32.win32.x86_64/3.102.1.v20140206-1358/org.eclipse.swt.win32.win32.x86_64-3.102.1.v20140206-1358.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.win32.win32.x86_64/3.103.1.v20140903-1947/org.eclipse.swt.win32.win32.x86_64-3.103.1.v20140903-1947.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.e4.ui.workbench.renderers.swt.cocoa/0.11.100.v20130516-1100/org.eclipse.e4.ui.workbench.renderers.swt.cocoa-0.11.100.v20130516-1100.jar
+[DEBUG] 	reference:file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.cocoa.macosx.x86_64/3.102.1.v20140206-1358/org.eclipse.swt.cocoa.macosx.x86_64-3.102.1.v20140206-1358.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.swt.cocoa.macosx.x86_64/3.103.1.v20140903-1947/org.eclipse.swt.cocoa.macosx.x86_64-3.103.1.v20140903-1947.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/org/eclipse/tycho/org.eclipse.tycho.surefire.osgibooter/0.22.0/org.eclipse.tycho.surefire.osgibooter-0.22.0.jar
+[DEBUG] 	reference:file:/home/kapitan/.m2/repository/org/eclipse/tycho/org.eclipse.tycho.surefire.junit4/0.22.0/org.eclipse.tycho.surefire.junit4-0.22.0.jar
+[INFO] Expected eclipse log file: /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/data/.metadata/.log
+[INFO] Command line:
+	[/usr/lib/jvm/java-8-oracle/jre/bin/java, -Dosgi.noShutdown=false, -Dosgi.os=linux, -Dosgi.ws=gtk, -Dosgi.arch=x86_64, -Xmx512m, -Dosgi.clean=true, -jar, /home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.equinox.launcher/1.3.0.v20130327-1440/org.eclipse.equinox.launcher-1.3.0.v20130327-1440.jar, -debug, -consolelog, -data, /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/data, -install, /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work, -configuration, /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration, -application, org.eclipse.tycho.surefire.osgibooter.headlesstest, -testproperties, /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/surefire.properties]
+Configuration location:
+    file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/
+Configuration file:
+    file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/configuration/config.ini loaded
+Install location:
+    file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/
+Framework located:
+    file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.osgi/3.9.1.v20140110-1610/org.eclipse.osgi-3.9.1.v20140110-1610.jar
+Framework classpath:
+    file:/home/kapitan/.m2/repository/p2/osgi/bundle/org.eclipse.osgi/3.9.1.v20140110-1610/org.eclipse.osgi-3.9.1.v20140110-1610.jar
+Debug options:
+    file:/home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/.options not found
+Time to load bundles: 365
+!SESSION 2015-01-06 16:57:07.245 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application org.eclipse.tycho.surefire.osgibooter.headlesstest -testproperties /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/surefire.properties
+Command-line arguments:  -debug -consolelog -data /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/work/data -application org.eclipse.tycho.surefire.osgibooter.headlesstest -testproperties /home/kapitan/git/eclipse-addons/tests/com.andrearichiardi.eclipse.addons.tests.kepler/target/surefire.properties
+
+!ENTRY org.eclipse.osgi 2 0 2015-01-06 16:57:08.750
+!MESSAGE One or more bundles are not resolved because the following root constraints are not resolved:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.750
+!MESSAGE Bundle initial@reference:file:../../../../../../.m2/repository/p2/osgi/bundle/org.eclipse.swt.cocoa.macosx.x86_64/3.102.1.v20140206-1358/org.eclipse.swt.cocoa.macosx.x86_64-3.102.1.v20140206-1358.jar was not resolved.
+!SUBENTRY 2 org.eclipse.swt.cocoa.macosx.x86_64 2 0 2015-01-06 16:57:08.751
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.751
+!MESSAGE Bundle initial@reference:file:../../../../../../.m2/repository/p2/osgi/bundle/org.eclipse.swt.win32.win32.x86_64/3.102.1.v20140206-1358/org.eclipse.swt.win32.win32.x86_64-3.102.1.v20140206-1358.jar was not resolved.
+!SUBENTRY 2 org.eclipse.swt.win32.win32.x86_64 2 0 2015-01-06 16:57:08.751
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.751
+!MESSAGE Bundle initial@reference:file:../../../../../../.m2/repository/p2/osgi/bundle/org.eclipse.swt.gtk.linux.x86/3.102.1.v20140206-1358/org.eclipse.swt.gtk.linux.x86-3.102.1.v20140206-1358.jar was not resolved.
+!SUBENTRY 2 org.eclipse.swt.gtk.linux.x86 2 0 2015-01-06 16:57:08.752
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.752
+!MESSAGE Bundle initial@reference:file:../../../../../../.m2/repository/p2/osgi/bundle/org.eclipse.swt.win32.win32.x86/3.102.1.v20140206-1358/org.eclipse.swt.win32.win32.x86-3.102.1.v20140206-1358.jar was not resolved.
+!SUBENTRY 2 org.eclipse.swt.win32.win32.x86 2 0 2015-01-06 16:57:08.752
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.753
+!MESSAGE Bundle initial@reference:file:../../../../../../.m2/repository/p2/osgi/bundle/org.eclipse.swt.gtk.linux.x86_64/3.102.1.v20140206-1358/org.eclipse.swt.gtk.linux.x86_64-3.102.1.v20140206-1358.jar was not resolved.
+!SUBENTRY 2 org.eclipse.swt.gtk.linux.x86_64 2 0 2015-01-06 16:57:08.753
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+
+!ENTRY org.eclipse.osgi 2 0 2015-01-06 16:57:08.758
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.758
+!MESSAGE Bundle org.eclipse.equinox.launcher.gtk.linux.x86_1.1.200.v20140116-2212 [74] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.launcher.gtk.linux.x86 2 0 2015-01-06 16:57:08.758
+!MESSAGE Platform filter did not match: (& (osgi.ws=gtk) (osgi.os=linux) (osgi.arch=x86))
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.759
+!MESSAGE Bundle org.eclipse.swt.gtk.linux.x86_3.102.1.v20140206-1358 [76] was not resolved.
+!SUBENTRY 2 org.eclipse.swt.gtk.linux.x86 2 0 2015-01-06 16:57:08.759
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.759
+!MESSAGE Bundle org.eclipse.swt.gtk.linux.x86_3.103.1.v20140903-1947 [100] was not resolved.
+!SUBENTRY 2 org.eclipse.swt.gtk.linux.x86 2 0 2015-01-06 16:57:08.760
+!MESSAGE Platform filter did not match: (& (osgi.ws=gtk) (osgi.os=linux) (osgi.arch=x86))
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.760
+!MESSAGE Bundle org.eclipse.swt.gtk.linux.x86_64_3.102.1.v20140206-1358 [102] was not resolved.
+!SUBENTRY 2 org.eclipse.swt.gtk.linux.x86_64 2 0 2015-01-06 16:57:08.760
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.761
+!MESSAGE Bundle org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20140116-2212 [104] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.launcher.win32.win32.x86 2 0 2015-01-06 16:57:08.761
+!MESSAGE Platform filter did not match: (& (osgi.ws=win32) (osgi.os=win32) (osgi.arch=x86))
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.761
+!MESSAGE Bundle org.eclipse.swt.win32.win32.x86_3.102.1.v20140206-1358 [105] was not resolved.
+!SUBENTRY 2 org.eclipse.swt.win32.win32.x86 2 0 2015-01-06 16:57:08.761
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.761
+!MESSAGE Bundle org.eclipse.swt.win32.win32.x86_3.103.1.v20140903-1947 [106] was not resolved.
+!SUBENTRY 2 org.eclipse.swt.win32.win32.x86 2 0 2015-01-06 16:57:08.762
+!MESSAGE Platform filter did not match: (& (osgi.ws=win32) (osgi.os=win32) (osgi.arch=x86))
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.762
+!MESSAGE Bundle org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20140116-2212 [107] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.launcher.win32.win32.x86_64 2 0 2015-01-06 16:57:08.762
+!MESSAGE Platform filter did not match: (& (osgi.ws=win32) (osgi.os=win32) (osgi.arch=x86_64))
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.762
+!MESSAGE Bundle org.eclipse.swt.win32.win32.x86_64_3.102.1.v20140206-1358 [108] was not resolved.
+!SUBENTRY 2 org.eclipse.swt.win32.win32.x86_64 2 0 2015-01-06 16:57:08.763
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.763
+!MESSAGE Bundle org.eclipse.swt.win32.win32.x86_64_3.103.1.v20140903-1947 [109] was not resolved.
+!SUBENTRY 2 org.eclipse.swt.win32.win32.x86_64 2 0 2015-01-06 16:57:08.763
+!MESSAGE Platform filter did not match: (& (osgi.ws=win32) (osgi.os=win32) (osgi.arch=x86_64))
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.763
+!MESSAGE Bundle org.eclipse.e4.ui.workbench.renderers.swt.cocoa_0.11.100.v20130516-1100 [110] was not resolved.
+!SUBENTRY 2 org.eclipse.e4.ui.workbench.renderers.swt.cocoa 2 0 2015-01-06 16:57:08.763
+!MESSAGE Platform filter did not match: (osgi.ws=cocoa)
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.763
+!MESSAGE Bundle org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.200.v20140116-2212 [111] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.launcher.cocoa.macosx.x86_64 2 0 2015-01-06 16:57:08.764
+!MESSAGE Platform filter did not match: (& (osgi.ws=cocoa) (osgi.os=macosx) (osgi.arch=x86_64) )
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.764
+!MESSAGE Bundle org.eclipse.swt.cocoa.macosx.x86_64_3.102.1.v20140206-1358 [112] was not resolved.
+!SUBENTRY 2 org.eclipse.swt.cocoa.macosx.x86_64 2 0 2015-01-06 16:57:08.764
+!MESSAGE Missing required capability Require-Capability: osgi.ee; filter="(|(&(osgi.ee=CDC/Foundation)(version=1.0))(&(osgi.ee=JavaSE)(version=1.3)))".
+!SUBENTRY 1 org.eclipse.osgi 2 0 2015-01-06 16:57:08.764
+!MESSAGE Bundle org.eclipse.swt.cocoa.macosx.x86_64_3.103.1.v20140903-1947 [113] was not resolved.
+!SUBENTRY 2 org.eclipse.swt.cocoa.macosx.x86_64 2 0 2015-01-06 16:57:08.764
+!MESSAGE Platform filter did not match: (& (osgi.ws=cocoa) (osgi.os=macosx) (osgi.arch=x86_64) )
+Starting application: 1521
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 35.019s
+[INFO] Finished at: Tue Jan 06 16:57:10 CET 2015
+[INFO] Final Memory: 109M/778M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.eclipse.tycho:tycho-surefire-plugin:0.22.0:test (default-test) on project com.andrearichiardi.eclipse.addons.tests.kepler: No tests found. -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.eclipse.tycho:tycho-surefire-plugin:0.22.0:test (default-test) on project com.andrearichiardi.eclipse.addons.tests.kepler: No tests found.
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:213)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: No tests found.
+	at org.eclipse.tycho.surefire.TestMojo.runTest(TestMojo.java:941)
+	at org.eclipse.tycho.surefire.TestMojo.execute(TestMojo.java:627)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	... 19 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

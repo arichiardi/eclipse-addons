@@ -14,6 +14,9 @@
   </parent>
 
   <build>
+    <!-- tycho-compiler-plugin compiles the sources it sees in build.properties -->
+    <!-- <sourceDirectory>../com.andrearichiardi.eclipse.addons.tests.src/src/main/java</sourceDirectory> -->
+    <!-- <testSourceDirectory>../com.andrearichiardi.eclipse.addons.tests.src/src/main/java</testSourceDirectory> -->
     <resources>
       <resource>
         <directory>.</directory>
@@ -22,38 +25,5 @@
         </includes>
       </resource>
     </resources>
-    <plugins>
-      <plugin>
-        <groupId>org.eclipse.tycho</groupId>
-        <artifactId>tycho-surefire-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>unpack-sources</id>
-            <phase>process-resources</phase>
-            <goals>
-              <goal>unpack</goal>
-            </goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>com.andrearichiardi.eclipse</groupId>
-                  <artifactId>com.andrearichiardi.eclipse.addons.tests.src</artifactId>
-                  <version>1.0.0-SNAPSHOT</version>
-                  <type>jar</type>
-                  <overWrite>true</overWrite>
-                  <outputDirectory>${project.build.sourceDirectory}</outputDirectory>
-                </artifactItem>
-              </artifactItems>
-              <includes>**/*.java</includes>
-              <excludes>**/*.properties</excludes>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
   </build>
 </project>
