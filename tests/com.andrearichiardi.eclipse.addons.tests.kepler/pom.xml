@@ -25,5 +25,27 @@
         </includes>
       </resource>
     </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+          <groupId>org.eclipse.tycho</groupId>
+          <artifactId>tycho-source-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>plugin-source</id>
+              <goals>
+                <goal>plugin-source</goal>
+              </goals>
+            </execution>
+          </executions>
+      </plugin>
+    </plugins>
   </build>
 </project>
