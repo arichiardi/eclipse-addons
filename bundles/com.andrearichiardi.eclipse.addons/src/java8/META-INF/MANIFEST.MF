@@ -20,9 +20,14 @@ Service-Component: OSGI-INF/services/adapterservice.xml,
   OSGI-INF/services/loggersupplier.xml,
   OSGI-INF/services/obervableadapter.xml,
   OSGI-INF/services/scopedobjectfactoryfunction.xml,
-  OSGI-INF/services/valuesupplier.xml
+  OSGI-INF/services/valuesupplier.xml,
+  OSGI-INF/services/dateformatter.xml,
+  OSGI-INF/services/localeprovider.xml,
+  OSGI-INF/services/numberformatter.xml,
+  OSGI-INF/services/temporalaccessformatter.xml
 Export-Package: com.andrearichiardi.eclipse.addons,
  com.andrearichiardi.eclipse.addons.adapter,
  com.andrearichiardi.eclipse.addons.di,
  com.andrearichiardi.eclipse.addons.di.context,
- com.andrearichiardi.eclipse.addons.log
+ com.andrearichiardi.eclipse.addons.log,
+ com.andrearichiardi.eclipse.addons.text

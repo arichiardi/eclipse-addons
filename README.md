@@ -1,13 +1,11 @@
 eclipse-addons
 ==============
 
-I found e(fx)clipse ```core.di```, ```core.adapter```, ```core.text``` packages very good additions to Eclipse's own framework and then decided to factor out their code in an autonomous bundle (I apologize for the shameful package name): ```com.andrearichiardi.eclipse.addons```.
+I found e(fx)clipse ```core.di```, ```core.adapter```, ```core.text``` packages very good additions to Eclipse's own framework and then decided to factor out their code in an autonomous bundle: ```com.andrearichiardi.eclipse.addons```.
 
-As a starting point, try [this](http://tomsondev.bestsolution.at/2013/11/21/writing-ieclipsecontext-less-code/) blog post and [this other](https://wiki.eclipse.org/Efxclipse/Runtime/Recipes#Publishing_to_the_IEclipseContext)
-excerpt from the e(fx)clipse wiki.
+To understand its features, try either [this](http://tomsondev.bestsolution.at/2013/11/21/writing-ieclipsecontext-less-code/) blog post or [this](https://wiki.eclipse.org/Efxclipse/Runtime/Recipes#Publishing_to_the_IEclipseContext) other excerpt from the e(fx)clipse wiki
 
-This new packaging removes all the Java 8 type annotations and adds [retrolambda](https://github.com/orfjackal/retrolambda) to backport the new constructs.
-The Execution Environment has been set to ```JavaSE-1.6```. Kepler and E4 (Luna and higher) are supported.
+The new packaging removes all the Java 8 type annotations and adds [retrolambda](https://github.com/orfjackal/retrolambda) to backport new constructs to Java 6. Unfortunately, the ```core.text``` package makes use of ```java.util.function``` and ```java.time```, and it has been momentarily excluded. Pull requests that finalize a JDK8-only build through a Maven profile are welcome. Kepler and E4 (Luna and higher) are supported.
 
 Download
 --------
@@ -35,7 +33,12 @@ The artifacts are available as snapshots on Maven Central. In order to get them,
       <artifactId>com.andrearichiardi.eclipse.addons</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
+
+Contribute
+----------
     
+In order to properly build using Maven, [```toolchains.xml```](http://maven.apache.org/guides/mini/guide-using-toolchains.html) needs to be configured with a suitable 1.6 path as the Execution Environment has been set to ```JavaSE-1.6``` and Tycho's [```<useJDK>```](http://eclipse.org/tycho/sitedocs/tycho-compiler-plugin/compile-mojo.html#useJDK) to ```BREE```.
+
 License
 -------
 

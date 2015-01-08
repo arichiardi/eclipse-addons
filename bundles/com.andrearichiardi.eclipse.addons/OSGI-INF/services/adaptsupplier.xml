@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.andrearichiardi.eclipse.addons.di.context.adaptsupplier">
-   <implementation class="com.andrearichiardi.eclipse.addons.di.context.internal.AdaptValueSupplier"/>
+   <implementation class="com.andrearichiardi.eclipse.addons.di.internal.AdaptValueSupplier"/>
    <service>
       <provide interface="org.eclipse.e4.core.di.suppliers.ExtendedObjectSupplier"/>
    </service>
