@@ -12,10 +12,7 @@ package com.andrearichiardi.eclipse.addons.text;
 
 import java.util.function.Function;
 
-import org.apache.commons.lang.text.StrLookup;
-import org.apache.commons.lang.text.StrSubstitutor;
 import org.eclipse.jdt.annotation.NonNull;
-import org.eclipse.jdt.annotation.Nullable;
 
 /**
  * Factory to create message formatter
@@ -34,39 +31,51 @@ public class MessageFormatter {
 	 * @return a formatting function
 	 */
 	public static @NonNull Function<Object, String> create(@NonNull Function<String, Object> dataProvider, @NonNull Function<String, Formatter<?>> formatProvider) {
-		StrSubstitutor strSubstitutor = new StrSubstitutor(new LookupImpl(dataProvider, formatProvider));
-		return strSubstitutor::replace;
+	    return (Object o) -> replace(o.toString(), dataProvider, formatProvider);
 	}
 
-	private static class LookupImpl extends StrLookup {
-		@NonNull
- private final Function<String, Object> dataProvider;
-
-		@NonNull
- private final Function<String, Formatter<?>> formatProvider;
-
-		public LookupImpl(@NonNull Function<String, Object> dataProvider, @NonNull Function<String, Formatter<?>> formatProvider) {
-			this.dataProvider = dataProvider;
-			this.formatProvider = formatProvider;
-		}
-
-		@SuppressWarnings("null")
-		@Override
-		public String lookup(String subValue) {
-			String key = subValue.substring(0, subValue.indexOf(','));
-			String formatData = subValue.substring(subValue.indexOf(',') + 1);
-			String formatter = formatData.substring(0, formatData.indexOf(','));
-			String format = formatData.substring(formatData.indexOf(',') + 1);
-
-			Object object = this.dataProvider.apply(key);
-			@SuppressWarnings("unchecked")
-			Formatter<Object> formatterInstance = (Formatter<Object>) this.formatProvider.apply(formatter);
-			if (formatterInstance == null) {
-				return object + ""; //$NON-NLS-1$
-			}
-
-			return formatterInstance.format(object, format);
-		}
-
-	}
+	/**
+	 * Given a message to be formatted containing a placeholder in the form <code>${dataKey, formatterKey, format}</code>
+	 * and two lookup functions (key->data and key->formatter), applies the formatting replacing the formatted data
+	 * within the message itself.<br/> <br/>
+	 * This function replaces StrSubstitutor's functionality. It has been adapted from
+     * <a href="http://stackoverflow.com/questions/14044715/strsubstitutor-replacement-with-jre-libraries">this</a>
+     * Stack Overflow post.
+	 * @param str
+	 * @return
+	 */
+	public static String replace(String str, @NonNull Function<String, Object> dataProvider, @NonNull Function<String, Formatter<?>> formatProvider) {
+        StringBuilder sb = new StringBuilder();
+        char[] strArray = str.toCharArray();
+        int i = 0;
+        while (i < strArray.length - 1) {
+            if (strArray[i] == '$' && strArray[i + 1] == '{') {
+                i = i + 2;
+                int begin = i;
+                while (strArray[i] != '}') ++i;
+                
+                String subValue = str.substring(begin, i++);
+                String key = subValue.substring(0, subValue.indexOf(','));
+                String formatData = subValue.substring(subValue.indexOf(',') + 1);
+                String formatter = formatData.substring(0, formatData.indexOf(','));
+                String format = formatData.substring(formatData.indexOf(',') + 1);
+                
+                Object object = dataProvider.apply(key);
+                @SuppressWarnings("unchecked")
+                Formatter<Object> formatterInstance = (Formatter<Object>) formatProvider.apply(formatter);
+                if (formatterInstance == null) {
+                    return object + ""; //$NON-NLS-1$
+                }
+                
+                String formatted = formatterInstance.format(object, format);
+                
+                sb.append(formatted);
+            } else {
+                sb.append(strArray[i]);
+                ++i;
+            }
+        }
+        if(i<strArray.length) sb.append(strArray[i]);
+        return sb.toString();
+    }
 }
