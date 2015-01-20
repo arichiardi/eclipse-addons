@@ -25,8 +25,8 @@ import org.osgi.framework.FrameworkUtil;
 import com.andrearichiardi.eclipse.addons.Common;
 import com.andrearichiardi.eclipse.addons.StringDoubleProvider;
 import com.andrearichiardi.eclipse.addons.StringIntegerProvider;
-import com.andrearichiardi.eclipse.addons.adapter.Adapt;
-import com.andrearichiardi.eclipse.addons.adapter.AdapterProvider;
+import com.andrearichiardi.eclipse.addons.di.adapter.Adapt;
+import com.andrearichiardi.eclipse.addons.di.adapter.AdapterProvider;
 
 /**
  * 

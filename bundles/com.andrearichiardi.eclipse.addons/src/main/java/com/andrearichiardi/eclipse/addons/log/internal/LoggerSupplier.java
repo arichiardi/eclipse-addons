@@ -8,7 +8,7 @@
  * Contributors:
  *     Tom Schindl<tom.schindl@bestsolution.at> - initial API and implementation
  *******************************************************************************/
-package com.andrearichiardi.eclipse.addons.di.internal;
+package com.andrearichiardi.eclipse.addons.log.internal;
 
 import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.core.di.suppliers.ExtendedObjectSupplier;

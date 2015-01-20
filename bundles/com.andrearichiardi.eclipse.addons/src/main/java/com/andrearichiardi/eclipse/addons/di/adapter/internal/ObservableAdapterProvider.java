@@ -8,18 +8,19 @@
  * Contributors:
  *     Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *******************************************************************************/
-package com.andrearichiardi.eclipse.addons.di.internal;
+package com.andrearichiardi.eclipse.addons.di.adapter.internal;
 
 import org.eclipse.core.databinding.observable.Realm;
 import org.eclipse.core.databinding.observable.value.IObservableValue;
 import org.eclipse.core.databinding.observable.value.IValueChangeListener;
 import org.eclipse.core.databinding.observable.value.ValueChangeEvent;
 import org.eclipse.core.databinding.observable.value.WritableValue;
+import org.eclipse.jdt.annotation.NonNull;
 
 import com.andrearichiardi.eclipse.addons.Callback;
-import com.andrearichiardi.eclipse.addons.adapter.AdapterProvider;
-import com.andrearichiardi.eclipse.addons.adapter.AdapterService.ValueAccess;
 import com.andrearichiardi.eclipse.addons.di.ContextBoundValue;
+import com.andrearichiardi.eclipse.addons.di.adapter.AdapterProvider;
+import com.andrearichiardi.eclipse.addons.di.adapter.AdapterService.ValueAccess;
 
 /**
  * Eclipse Databinding Observable Adapter
@@ -28,23 +29,23 @@ import com.andrearichiardi.eclipse.addons.di.ContextBoundValue;
 public class ObservableAdapterProvider implements AdapterProvider<ContextBoundValue, IObservableValue> {
 
 	@Override
-	public Class<ContextBoundValue> getSourceType() {
+	public @NonNull Class<ContextBoundValue> getSourceType() {
 		return ContextBoundValue.class;
 	}
 
 	@Override
-	public Class<IObservableValue> getTargetType() {
+	public @NonNull Class<IObservableValue> getTargetType() {
 		return IObservableValue.class;
 	}
 
 	@Override
-	public boolean canAdapt(ContextBoundValue sourceObject, Class<IObservableValue> targetType) {
+	public boolean canAdapt(@NonNull ContextBoundValue sourceObject, @NonNull Class<IObservableValue> targetType) {
 		return true;
 	}
 
 	@SuppressWarnings({ "unchecked", "null" })
 	@Override
-	public IObservableValue adapt(final ContextBoundValue sourceObject, Class<IObservableValue> targetType, ValueAccess... valueAccess) {
+	public IObservableValue adapt(final @NonNull ContextBoundValue sourceObject, @NonNull Class<IObservableValue> targetType, ValueAccess... valueAccess) {
 		Realm r = null;
 		
 		for( ValueAccess a : valueAccess ) {

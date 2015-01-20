@@ -26,10 +26,10 @@ import org.eclipse.jdt.annotation.Nullable;
 
 import com.andrearichiardi.eclipse.addons.Callback;
 import com.andrearichiardi.eclipse.addons.Subscription;
-import com.andrearichiardi.eclipse.addons.adapter.AdapterService;
-import com.andrearichiardi.eclipse.addons.adapter.AdapterService.ValueAccess;
 import com.andrearichiardi.eclipse.addons.di.ContextBoundValue;
 import com.andrearichiardi.eclipse.addons.di.ScopedObjectFactory;
+import com.andrearichiardi.eclipse.addons.di.adapter.AdapterService;
+import com.andrearichiardi.eclipse.addons.di.adapter.AdapterService.ValueAccess;
 import com.andrearichiardi.eclipse.addons.log.Log;
 import com.andrearichiardi.eclipse.addons.log.Logger;
 
@@ -40,181 +40,190 @@ import com.andrearichiardi.eclipse.addons.log.Logger;
  *            the type
  */
 public class EclipseContextBoundValue<T> implements ContextBoundValue<T> {
-	@NonNull
-	private IEclipseContext context;
-	@Nullable
-	private String contextKey;
-	@Nullable
-	List<Callback<T>> callbacks;
-	@Nullable
-	List<Callback<Void>> disposalCallbacks;
-	@NonNull
-	private AdapterService adapterService;
-	@Nullable
-	private T value;
-	
-	@Inject
-	@Optional
-	@Nullable
-	IEventBroker eventBroker;
-	
-	@Inject
-	@Log
-	private Logger logger;
+    @NonNull
+    private IEclipseContext context;
+    @Nullable
+    private String contextKey;
+    @Nullable
+    List<Callback<T>> callbacks;
+    @Nullable
+    List<Callback<Void>> disposalCallbacks;
+    @NonNull
+    private AdapterService adapterService;
+    @Nullable
+    private T value;
 
-	/**
-	 * Create a new bound value
-	 * 
-	 * @param context
-	 *            the context
-	 * @param adapterService
-	 *            the adapter service
-	 */
-	@Inject
-	public EclipseContextBoundValue(@NonNull IEclipseContext context, @NonNull AdapterService adapterService) {
-		this.context = context;
-		this.adapterService = adapterService;
-	}
+    @Inject
+    @Optional
+    @Nullable
+    IEventBroker eventBroker;
 
-	/**
-	 * Setting the context key
-	 * 
-	 * @param contextKey
-	 *            the key
-	 */
-	public void setContextKey(@NonNull final String contextKey) {
-		this.contextKey = contextKey;
-		this.context.runAndTrack(new RunAndTrack() {
+    @Inject
+    @Optional
+    @Log
+    private Logger logger;
 
-			@SuppressWarnings("unchecked")
-			@Override
-			public boolean changed(IEclipseContext context) {
-				setCurrentValue((T) context.get(contextKey));
-				return true;
-			}
-		});
-	}
+    /**
+     * Create a new bound value
+     * 
+     * @param context
+     *            the context
+     * @param adapterService
+     *            the adapter service
+     */
+    @Inject
+    public EclipseContextBoundValue(@NonNull IEclipseContext context, @NonNull AdapterService adapterService) {
+        this.context = context;
+        this.adapterService = adapterService;
+    }
 
-	@SuppressWarnings("unchecked")
-	void setCurrentValue(@Nullable T o) {
-		this.value = o;
-		if (this.callbacks != null) {
-			for (Callback<?> c : this.callbacks.toArray(new Callback<?>[0])) {
-				try {
-					((Callback<T>) c).call(o);	
-				} catch(Throwable t) {
-					this.logger.error("Failed while executing callback", t); //$NON-NLS-1$
-				}
-			}
-		}
-	}
+    /**
+     * Setting the context key
+     * 
+     * @param contextKey
+     *            the key
+     */
+    public void setContextKey(@NonNull final String contextKey) {
+        this.contextKey = contextKey;
+        this.context.runAndTrack(new RunAndTrack() {
 
-	@Override
-	@Nullable
-	public T getValue() {
-		return this.value;
-	}
+            @SuppressWarnings("unchecked")
+            @Override
+            public boolean changed(IEclipseContext context) {
+                setCurrentValue((T) context.get(contextKey));
+                return true;
+            }
+        });
+    }
 
-	@Override
-	public void publish(@Nullable T value) {
-		this.context.modify(this.contextKey, value);
-		if( this.eventBroker != null ) {
-			this.eventBroker.send(ScopedObjectFactory.KEYMODIFED_TOPIC, Collections.singletonMap(this.contextKey, value));
-		}
-	}
+    @SuppressWarnings("unchecked")
+    void setCurrentValue(@Nullable T o) {
+        this.value = o;
+        if (this.callbacks != null) {
+            for (Callback<?> c : this.callbacks.toArray(new Callback<?>[0])) {
+                try {
+                    ((Callback<T>) c).call(o);	
+                } catch(Throwable t) {
+                    if (this.logger != null) {
+                        this.logger.error("Failed while executing callback", t); //$NON-NLS-1$
+                    } else {
+                        Logger logger = (Logger) context.get(Logger.class.getName());
+                        logger.error("Failed while executing callback", t);
+                    }
+                }
+            }
+        }
+    }
 
-	@Override
-	public Subscription subscribeOnValueChange(final Callback<T> callback) {
-		if (this.callbacks == null) {
-			this.callbacks = new ArrayList<Callback<T>>();
-		}
+    @Override
+    @Nullable
+    public T getValue() {
+        return this.value;
+    }
 
-		if (this.callbacks != null) {
-			this.callbacks.add(callback);
-		}
+    @Override
+    public void publish(@Nullable T value) {
+        this.context.modify(this.contextKey, value);
+        if( this.eventBroker != null ) {
+            this.eventBroker.send(ScopedObjectFactory.KEYMODIFED_TOPIC, Collections.singletonMap(this.contextKey, value));
+        }
+    }
 
-		return new Subscription() {
+    @Override
+    public @NonNull Subscription subscribeOnValueChange(@NonNull final Callback<T> callback) {
+        if (this.callbacks == null) {
+            this.callbacks = new ArrayList<Callback<T>>();
+        }
 
-			@Override
-			public void dispose() {
-				List<Callback<T>> callbacks = EclipseContextBoundValue.this.callbacks;
-				if (callbacks != null) {
-					callbacks.remove(callback);
-				}
-			}
-		};
-	}
+        if (this.callbacks != null) {
+            this.callbacks.add(callback);
+        }
 
-	@Override
-	public Subscription subscribeOnDispose(final Callback<Void> callback) {
-		if (this.disposalCallbacks == null) {
-			this.disposalCallbacks = new ArrayList<Callback<Void>>();
-		}
-		if (this.disposalCallbacks != null) {
-			this.disposalCallbacks.add(callback);
-		}
+        return new Subscription() {
 
-		return new Subscription() {
+            @Override
+            public void dispose() {
+                List<Callback<T>> callbacks = EclipseContextBoundValue.this.callbacks;
+                if (callbacks != null) {
+                    callbacks.remove(callback);
+                }
+            }
+        };
+    }
 
-			@Override
-			public void dispose() {
-				List<Callback<Void>> disposalCallbacks = EclipseContextBoundValue.this.disposalCallbacks;
-				if (disposalCallbacks != null) {
-					disposalCallbacks.remove(callback);
-				}
-			}
-		};
-	}
+    @Override
+    public @NonNull Subscription subscribeOnDispose(final @NonNull Callback<Void> callback) {
+        if (this.disposalCallbacks == null) {
+            this.disposalCallbacks = new ArrayList<Callback<Void>>();
+        }
+        if (this.disposalCallbacks != null) {
+            this.disposalCallbacks.add(callback);
+        }
 
-	@SuppressWarnings("null")
-	@Override
-	public <A> A adaptTo(@NonNull Class<A> adapt) {
-		return this.adapterService.adapt(this, adapt, new ValueAccessImpl(this.context));
-	}
+        return new Subscription() {
 
-	@Override
-	public boolean canAdaptTo(Class<?> adapt) {
-		return this.adapterService.canAdapt(this, adapt);
-	}
+            @Override
+            public void dispose() {
+                List<Callback<Void>> disposalCallbacks = EclipseContextBoundValue.this.disposalCallbacks;
+                if (disposalCallbacks != null) {
+                    disposalCallbacks.remove(callback);
+                }
+            }
+        };
+    }
 
-	@PreDestroy
-	void dispose() {
-		List<Callback<Void>> disposalCallbacks = this.disposalCallbacks;
-		if (disposalCallbacks != null) {
-			for (Callback<?> callback : disposalCallbacks.toArray(new Callback<?>[0])) {
-				try {
-					callback.call(null);	
-				} catch(Throwable t) {
-					this.logger.error("Failure while executing clean up callback", t); //$NON-NLS-1$
-				}
-				
-			}
-			disposalCallbacks.clear();
-		}
-		if (this.callbacks != null) {
-			this.callbacks.clear();
-		}
-		this.value = null;
-	}
+    @Override
+    public <A> A adaptTo(@NonNull Class<A> adapt) {
+        return this.adapterService.adapt(this, adapt, new ValueAccessImpl(this.context));
+    }
 
-	static class ValueAccessImpl implements ValueAccess {
-		private final IEclipseContext context;
+    @Override
+    public boolean canAdaptTo(@NonNull Class<?> adapt) {
+        return this.adapterService.canAdapt(this, adapt);
+    }
 
-		public ValueAccessImpl(IEclipseContext context) {
-			this.context = context;
-		}
+    @PreDestroy
+    void dispose() {
+        List<Callback<Void>> disposalCallbacks = this.disposalCallbacks;
+        if (disposalCallbacks != null) {
+            for (Callback<?> callback : disposalCallbacks.toArray(new Callback<?>[0])) {
+                try {
+                    callback.call(null);	
+                } catch(Throwable t) {
+                    if (this.logger != null) {
+                        this.logger.error("Failure while executing clean up callback", t); //$NON-NLS-1$
+                    } else {
+                        Logger logger = (Logger) context.get(Logger.class.getName());
+                        logger.error("Failed while executing callback", t);
+                    }
+                }
 
-		@SuppressWarnings("unchecked")
-		@Override
-		public <O> O getValue(String key) {
-			return (O) this.context.get(key);
-		}
+            }
+            disposalCallbacks.clear();
+        }
+        if (this.callbacks != null) {
+            this.callbacks.clear();
+        }
+        this.value = null;
+    }
 
-		@SuppressWarnings("null")
-		@Override
-		public <O> O getValue(@NonNull Class<O> key) {
-			return this.context.get(key);
-		}
+    static class ValueAccessImpl implements ValueAccess {
+        private final IEclipseContext context;
 
-	}
+        public ValueAccessImpl(IEclipseContext context) {
+            this.context = context;
+        }
+
+        @SuppressWarnings("unchecked")
+        @Override
+        public <O> O getValue(@NonNull String key) {
+            return (O) this.context.get(key);
+        }
+
+        @Override
+        public <O> O getValue(@NonNull Class<O> key) {
+            return this.context.get(key);
+        }
+
+    }
 }

@@ -15,7 +15,7 @@ import org.eclipse.jdt.annotation.Nullable;
 
 import com.andrearichiardi.eclipse.addons.Callback;
 import com.andrearichiardi.eclipse.addons.Subscription;
-import com.andrearichiardi.eclipse.addons.adapter.Adaptable;
+import com.andrearichiardi.eclipse.addons.di.adapter.Adaptable;
 
 /**
  * A value bound to the IEclipseContext

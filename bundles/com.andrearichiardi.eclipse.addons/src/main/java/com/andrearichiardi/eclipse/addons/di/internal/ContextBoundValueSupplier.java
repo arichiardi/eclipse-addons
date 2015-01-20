@@ -28,7 +28,6 @@ import com.andrearichiardi.eclipse.addons.di.ContextValue;
 @SuppressWarnings("restriction")
 public class ContextBoundValueSupplier extends ExtendedObjectSupplier {
 	
-	@SuppressWarnings("null")
 	@Override
 	public Object get(IObjectDescriptor descriptor, IRequestor requestor, boolean track, boolean group) {
 		ContextValue qualifier = descriptor.getQualifier(ContextValue.class);

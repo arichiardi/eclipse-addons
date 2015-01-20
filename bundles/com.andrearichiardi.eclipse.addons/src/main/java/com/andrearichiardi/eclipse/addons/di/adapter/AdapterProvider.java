@@ -8,11 +8,11 @@
  * Contributors:
  *     Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *******************************************************************************/
-package com.andrearichiardi.eclipse.addons.adapter;
+package com.andrearichiardi.eclipse.addons.di.adapter;
 
 import org.eclipse.jdt.annotation.NonNull;
 
-import com.andrearichiardi.eclipse.addons.adapter.AdapterService.ValueAccess;
+import com.andrearichiardi.eclipse.addons.di.adapter.AdapterService.ValueAccess;
 
 /**
  * Service which adapts an instance to a given type

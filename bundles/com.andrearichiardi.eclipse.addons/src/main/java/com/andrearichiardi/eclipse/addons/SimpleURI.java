@@ -17,7 +17,6 @@ import org.eclipse.jdt.annotation.Nullable;
  * An URI representation
  */
 public class SimpleURI implements URI {
-	@SuppressWarnings("null")
 	@NonNull
 	private String[] segments = new String[0];
 	
@@ -100,7 +99,7 @@ public class SimpleURI implements URI {
 	}
 	
 	@Override
-	public URI createURI(String s) {
+	public URI createURI(@NonNull String s) {
 		return new SimpleURI(s);
 	}
 }

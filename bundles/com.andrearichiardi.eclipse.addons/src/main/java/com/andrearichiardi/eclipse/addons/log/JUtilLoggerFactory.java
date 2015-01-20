@@ -12,6 +12,8 @@ package com.andrearichiardi.eclipse.addons.log;
 
 import javax.inject.Provider;
 
+import org.eclipse.jdt.annotation.NonNull;
+
 /**
  * Concreate implementation for a logger factory using {@link java.util.logging.Logger}
  */
@@ -23,7 +25,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 	}
 	
 	@Override
-	public Logger createLogger(String name) {
+	public @NonNull Logger createLogger(@NonNull String name) {
 		return new LoggerImpl(name);
 	}
 
@@ -99,7 +101,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void log(Level level, String message) {
+		public void log(@NonNull Level level, @NonNull String message) {
 			if (!isEnabled(level)) {
 				return;
 			}
@@ -107,7 +109,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void logf(Level level, String pattern, Throwable t, Object... args) {
+		public void logf(@NonNull Level level, @NonNull String pattern, @NonNull Throwable t, Object... args) {
 			if (!isEnabled(level)) {
 				return;
 			}
@@ -115,7 +117,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void logf(Level level, String pattern, Object... args) {
+		public void logf(@NonNull Level level, @NonNull String pattern, Object... args) {
 			if (!isEnabled(level)) {
 				return;
 			}
@@ -123,7 +125,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void log(Level level, String message, Throwable t) {
+		public void log(@NonNull Level level, @NonNull String message, @NonNull Throwable t) {
 			if (!isEnabled(level)) {
 				return;
 			}
@@ -131,7 +133,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 
 		@Override
-		public void trace(String message) {
+		public void trace(@NonNull String message) {
 			if (!isEnabled(Level.TRACE)) {
 				return;
 			}
@@ -139,7 +141,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void trace(String message, Throwable t) {
+		public void trace(@NonNull String message, @NonNull Throwable t) {
 			if (!isEnabled(Level.TRACE)) {
 				return;
 			}
@@ -147,7 +149,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 
 		@Override
-		public void debug(String message) {
+		public void debug(@NonNull String message) {
 			if (!isEnabled(Level.DEBUG)) {
 				return;
 			}
@@ -155,7 +157,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void debug(String message, Throwable t) {
+		public void debug(@NonNull String message, @NonNull Throwable t) {
 			if (!isEnabled(Level.DEBUG)) {
 				return;
 			}
@@ -163,7 +165,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 
 		@Override
-		public void info(String message) {
+		public void info(@NonNull String message) {
 			if (!isEnabled(Level.INFO)) {
 				return;
 			}
@@ -172,7 +174,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 
 		
 		@Override
-		public void info(String message, Throwable t) {
+		public void info(@NonNull String message, @NonNull Throwable t) {
 			if (!isEnabled(Level.INFO)) {
 				return;
 			}
@@ -180,7 +182,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 
 		@Override
-		public void warning(String message) {
+		public void warning(@NonNull String message) {
 			if (!isEnabled(Level.WARNING)) {
 				return;
 			}
@@ -188,7 +190,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void warning(String message, Throwable t) {
+		public void warning(@NonNull String message, @NonNull Throwable t) {
 			if (!isEnabled(Level.WARNING)) {
 				return;
 			}
@@ -196,7 +198,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 
 		@Override
-		public void error(String message) {
+		public void error(@NonNull String message) {
 			if (!isEnabled(Level.ERROR)) {
 				return;
 			}
@@ -205,7 +207,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 
 		
 		@Override
-		public void error(String message, Throwable t) {
+		public void error(@NonNull String message, @NonNull Throwable t) {
 			if (!isEnabled(Level.ERROR)) {
 				return;
 			}
@@ -213,7 +215,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 
 		@Override
-		public void fatal(String message) {
+		public void fatal(@NonNull String message) {
 			if (!isEnabled(Level.FATAL)) {
 				return;
 			}
@@ -221,7 +223,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void fatal(String message, Throwable t) {
+		public void fatal(@NonNull String message, @NonNull Throwable t) {
 			if (!isEnabled(Level.FATAL)) {
 				return;
 			}
@@ -229,7 +231,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 
 		@Override
-		public void tracef(String pattern, Object... args) {
+		public void tracef(@NonNull String pattern, Object... args) {
 			if (!isEnabled(Level.TRACE)) {
 				return;
 			}
@@ -237,7 +239,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void tracef(String pattern, Throwable t, Object... args) {
+		public void tracef(@NonNull String pattern, @NonNull Throwable t, Object... args) {
 			if (!isEnabled(Level.TRACE)) {
 				return;
 			}
@@ -245,7 +247,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void debugf(String pattern, Object... args) {
+		public void debugf(@NonNull String pattern, Object... args) {
 			if (!isEnabled(Level.DEBUG)) {
 				return;
 			}
@@ -253,7 +255,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void debugf(String pattern, Throwable t, Object... args) {
+		public void debugf(@NonNull String pattern, @NonNull Throwable t, Object... args) {
 			if (!isEnabled(Level.DEBUG)) {
 				return;
 			}
@@ -261,7 +263,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void infof(String pattern, Object... args) {
+		public void infof(@NonNull String pattern, Object... args) {
 			if (!isEnabled(Level.INFO)) {
 				return;
 			}
@@ -269,7 +271,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void infof(String pattern, Throwable t, Object... args) {
+		public void infof(@NonNull String pattern, @NonNull Throwable t, Object... args) {
 			if (!isEnabled(Level.INFO)) {
 				return;
 			}
@@ -277,7 +279,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void warningf(String pattern, Object... args) {
+		public void warningf(@NonNull String pattern, Object... args) {
 			if (!isEnabled(Level.WARNING)) {
 				return;
 			}
@@ -285,7 +287,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void warningf(String pattern, Throwable t, Object... args) {
+		public void warningf(@NonNull String pattern, @NonNull Throwable t, Object... args) {
 			if (!isEnabled(Level.WARNING)) {
 				return;
 			}
@@ -293,7 +295,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void errorf(String pattern, Object... args) {
+		public void errorf(@NonNull String pattern, Object... args) {
 			if (!isEnabled(Level.ERROR)) {
 				return;
 			}
@@ -301,7 +303,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void errorf(String pattern, Throwable t, Object... args) {
+		public void errorf(@NonNull String pattern, @NonNull Throwable t, Object... args) {
 			if (!isEnabled(Level.ERROR)) {
 				return;
 			}
@@ -309,7 +311,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void fatalf(String pattern, Object... args) {
+		public void fatalf(@NonNull String pattern, Object... args) {
 			if (!isEnabled(Level.FATAL)) {
 				return;
 			}
@@ -317,7 +319,7 @@ public class JUtilLoggerFactory implements LoggerFactory, Provider<LoggerFactory
 		}
 		
 		@Override
-		public void fatalf(String pattern, Throwable t, Object... args) {
+		public void fatalf(@NonNull String pattern, @NonNull Throwable t, Object... args) {
 			if (!isEnabled(Level.FATAL)) {
 				return;
 			}

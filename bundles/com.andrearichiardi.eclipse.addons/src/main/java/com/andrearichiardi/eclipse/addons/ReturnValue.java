@@ -114,7 +114,7 @@ public interface ReturnValue<V> {
 		}
 
 		@Override
-		public State getState() {
+		public @NonNull State getState() {
 			return this.state;
 		}
 

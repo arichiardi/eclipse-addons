@@ -8,7 +8,7 @@
  * Contributors:
  *     Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *******************************************************************************/
-package com.andrearichiardi.eclipse.addons.adapter;
+package com.andrearichiardi.eclipse.addons.di.adapter;
 
 import org.eclipse.jdt.annotation.NonNull;
 import org.eclipse.jdt.annotation.Nullable;

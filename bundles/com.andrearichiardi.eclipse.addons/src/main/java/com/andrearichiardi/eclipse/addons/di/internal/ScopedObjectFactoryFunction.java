@@ -44,7 +44,7 @@ public class ScopedObjectFactoryFunction extends ContextFunction {
 		}
 		
 		@Override
-		public <C> C newInstance(Class<C> c) {
+		public <C> C newInstance(@NonNull Class<C> c) {
 			return ContextInjectionFactory.make(c, this.context);
 		}
 
@@ -53,7 +53,6 @@ public class ScopedObjectFactoryFunction extends ContextFunction {
 			return new ScopedObjectFactoryImpl(this.context.createChild(name),this.eventBroker);
 		}
 		
-		@SuppressWarnings("null")
 		@Override
 		public <O> void put(@NonNull Class<O> key, @NonNull O value) {
 			this.context.set(key, value);
